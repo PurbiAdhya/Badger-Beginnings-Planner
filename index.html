@@ -2711,6 +2711,549 @@ tbody tr:hover{background:#faf8fd}.course-code{color:var(--purple-dark);font-wei
   }
 }
 
+
+@media screen {
+  .course-choice-header {
+    margin-bottom: 14px;
+    padding: 18px 20px;
+    border: 1px solid var(--bb-line);
+    border-radius: 15px;
+    background: #fff;
+  }
+
+  .course-choice-back {
+    padding: 0;
+    border: 0;
+    color: var(--bb-muted);
+    background: transparent;
+    font-size: .75rem;
+    font-weight: 800;
+  }
+
+  .course-choice-header > span {
+    display: block;
+    margin: 12px 0 4px;
+    color: var(--bb-purple);
+    font-size: .68rem;
+    font-weight: 900;
+  }
+
+  .course-choice-header h2 {
+    margin: 0;
+    color: var(--bb-dark);
+    font-size: 1.5rem;
+    line-height: 1.15;
+  }
+
+  .course-choice-header p {
+    margin: 7px 0 0;
+    color: var(--bb-muted);
+    font-size: .79rem;
+    line-height: 1.45;
+  }
+
+  .course-credit-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding: 13px 15px;
+    border: 1px solid #d8cde5;
+    border-radius: 13px;
+    background: #f7f3fb;
+  }
+
+  .course-credit-strip strong {
+    color: var(--bb-dark);
+    font-size: .88rem;
+  }
+
+  .course-credit-strip span {
+    color: var(--bb-muted);
+    font-size: .7rem;
+  }
+
+  .choice-section {
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid var(--bb-line);
+    border-radius: 15px;
+    background: #fff;
+  }
+
+  .choice-section-heading {
+    margin-bottom: 12px;
+  }
+
+  .choice-section-heading h3 {
+    margin: 0;
+    color: var(--bb-dark);
+    font-size: 1rem;
+  }
+
+  .choice-section-heading small {
+    display: block;
+    margin-top: 4px;
+    color: var(--bb-muted);
+    font-size: .7rem;
+    line-height: 1.4;
+  }
+
+  .selected-course-list,
+  .course-choice-alternatives {
+    display: grid;
+    gap: 9px;
+  }
+
+  .selected-choice-card,
+  .alternative-choice-card {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid var(--bb-line);
+    border-radius: 12px;
+    background: #fff;
+  }
+
+  .selected-choice-card.locked-course {
+    border-left: 5px solid var(--bb-purple);
+    background: #faf7fd;
+  }
+
+  .selected-choice-card.optional-course {
+    border-left: 5px solid var(--bb-gold);
+    background: #fffdf7;
+  }
+
+  .selected-choice-main,
+  .alternative-choice-copy {
+    min-width: 0;
+  }
+
+  .selected-choice-main > div,
+  .alternative-choice-copy > div {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .selected-choice-main strong,
+  .alternative-choice-copy strong {
+    color: var(--bb-dark);
+    font-size: .82rem;
+    white-space: nowrap;
+  }
+
+  .selected-choice-main span,
+  .alternative-choice-copy span {
+    overflow: hidden;
+    color: #5e5468;
+    font-size: .7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .selected-choice-main small,
+  .alternative-choice-copy small {
+    display: block;
+    margin-top: 5px;
+    color: var(--bb-muted);
+    font-size: .64rem;
+  }
+
+  .alternative-choice-copy p {
+    margin: 6px 0 0;
+    color: #5c5266;
+    font-size: .66rem;
+    line-height: 1.35;
+  }
+
+  .course-lock-label {
+    padding: 6px 9px;
+    border-radius: 999px;
+    color: var(--bb-purple);
+    background: #ebe3f4;
+    font-size: .62rem;
+    font-weight: 900;
+  }
+
+  .remove-course-button,
+  .alternative-action-button {
+    min-width: 70px;
+    min-height: 36px;
+    padding: 0 10px;
+    border-radius: 9px;
+    font-size: .68rem;
+    font-weight: 900;
+  }
+
+  .remove-course-button {
+    border: 1px solid #d9cfdc;
+    color: #7c3a3a;
+    background: #fff;
+  }
+
+  .alternative-action-button {
+    border: 1px solid var(--bb-purple);
+    color: #fff;
+    background: var(--bb-purple);
+  }
+
+  .alternative-action-button:disabled {
+    cursor: not-allowed;
+    border-color: #ddd6e4;
+    color: #9c94a5;
+    background: #f3f0f5;
+  }
+
+  .disabled-choice {
+    opacity: .72;
+  }
+
+  .course-choice-finish {
+    margin: 0 0 28px;
+  }
+
+  .course-choice-continue {
+    width: 100%;
+    min-height: 54px;
+    border: 1px solid var(--bb-purple);
+    border-radius: 14px;
+    color: #fff;
+    background: var(--bb-purple);
+    font-size: .9rem;
+    font-weight: 950;
+  }
+
+  .choice-empty-state {
+    padding: 16px;
+    color: var(--bb-muted);
+    text-align: center;
+    font-size: .75rem;
+  }
+
+  @media (max-width: 760px) {
+    #courses-panel {
+      min-height: 100svh;
+      padding: 0;
+      background: #fff;
+    }
+
+    .course-choice-header {
+      margin: 0;
+      padding: 15px 18px 12px;
+      border: 0;
+      border-bottom: 1px solid var(--bb-line);
+      border-radius: 0;
+    }
+
+    .course-choice-header p {
+      font-size: .73rem;
+    }
+
+    .course-credit-strip {
+      margin: 12px 12px 10px;
+    }
+
+    .choice-section {
+      margin: 0 12px 12px;
+      padding: 13px;
+      border-radius: 13px;
+    }
+
+    .selected-choice-card,
+    .alternative-choice-card {
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .selected-choice-main > div,
+    .alternative-choice-copy > div {
+      display: grid;
+      gap: 2px;
+    }
+
+    .selected-choice-main span,
+    .alternative-choice-copy span {
+      white-space: normal;
+    }
+
+    .course-choice-finish {
+      padding: 0 12px calc(18px + env(safe-area-inset-bottom));
+    }
+
+    .course-choice-continue {
+      min-height: 56px;
+    }
+  }
+}
+
+
+@media screen {
+  .required-swap-choice {
+    border-color: #d8b8b8;
+    background: #fffafa;
+  }
+
+  .required-swap-choice .alternative-choice-copy p {
+    color: #7e3c3c;
+    font-weight: 750;
+  }
+
+  .required-swap-choice .alternative-action-button {
+    border-color: #7a3c3c;
+    background: #7a3c3c;
+  }
+
+  .course-lock-label {
+    text-align: center;
+  }
+}
+
+
+@media screen {
+  .selected-course-group {
+    display: grid;
+    gap: 7px;
+  }
+
+  .selected-course-name-row {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px !important;
+    min-width: 0;
+  }
+
+  .swap-course-button {
+    flex: 0 0 auto;
+    min-height: 28px;
+    padding: 0 9px;
+    border: 1px solid var(--bb-purple);
+    border-radius: 999px;
+    color: var(--bb-purple);
+    background: #fff;
+    font-size: .6rem;
+    font-weight: 950;
+    white-space: nowrap;
+  }
+
+  .swap-course-button:hover {
+    color: #fff;
+    background: var(--bb-purple);
+  }
+
+  .swap-course-button:disabled {
+    border-color: #ddd6e4;
+    color: #a49ba9;
+    background: #f5f2f6;
+  }
+
+  .selected-course-title {
+    display: block;
+    margin-top: 3px;
+    color: #5e5468;
+    font-size: .7rem;
+  }
+
+  .course-swap-panel {
+    overflow: hidden;
+    margin: 0 4px 4px;
+    padding: 10px;
+    border: 1px solid #cfc2de;
+    border-radius: 12px;
+    background: #f9f6fc;
+  }
+
+  .course-swap-panel-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .course-swap-panel-title strong {
+    color: var(--bb-dark);
+    font-size: .74rem;
+  }
+
+  .close-swap-button {
+    display: grid;
+    place-items: center;
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: var(--bb-muted);
+    background: transparent;
+    font-size: 1rem;
+  }
+
+  .swap-option-card {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #e4ddeb;
+  }
+
+  .swap-option-card:first-of-type {
+    border-top: 0;
+  }
+
+  .swap-option-copy {
+    min-width: 0;
+  }
+
+  .swap-option-copy > div {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+  }
+
+  .swap-option-copy strong {
+    color: var(--bb-dark);
+    font-size: .76rem;
+    white-space: nowrap;
+  }
+
+  .swap-option-copy span {
+    overflow: hidden;
+    color: #5e5468;
+    font-size: .66rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .swap-option-copy small {
+    display: block;
+    margin-top: 4px;
+    color: var(--bb-muted);
+    font-size: .61rem;
+  }
+
+  .swap-option-copy p {
+    margin: 5px 0 0;
+    color: #5d5266;
+    font-size: .63rem;
+    line-height: 1.35;
+  }
+
+  .multi-course-swap {
+    background: #fff7ef;
+  }
+
+  .multi-course-swap .swap-option-copy p {
+    color: #7f4d20;
+    font-weight: 800;
+  }
+
+  .choose-swap-button {
+    min-width: 66px;
+    min-height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--bb-purple);
+    border-radius: 9px;
+    color: #fff;
+    background: var(--bb-purple);
+    font-size: .68rem;
+    font-weight: 900;
+  }
+
+  @media (max-width: 760px) {
+    .selected-course-name-row {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+
+    .selected-course-title {
+      white-space: normal;
+    }
+
+    .swap-course-button {
+      min-height: 30px;
+      font-size: .61rem;
+    }
+
+    .course-swap-panel {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .swap-option-copy > div {
+      display: grid;
+      gap: 2px;
+    }
+
+    .swap-option-copy span {
+      white-space: normal;
+    }
+  }
+}
+
+
+@media screen {
+  .swap-recommendation-rank {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 5px;
+    padding: 3px 7px;
+    border-radius: 999px;
+    color: var(--bb-purple);
+    background: #ebe3f4;
+    font-size: .54rem;
+    font-weight: 950;
+    letter-spacing: .02em;
+  }
+
+  .swap-option-card:first-of-type .swap-recommendation-rank {
+    color: #4e3800;
+    background: #f5df91;
+  }
+}
+
+
+@media screen {
+  .availability-snapshot {
+    margin: -4px 0 14px;
+    padding: 0 4px;
+    color: var(--bb-muted);
+    font-size: .67rem;
+    line-height: 1.35;
+  }
+
+  .seat-availability {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 5px;
+    padding: 3px 7px;
+    border-radius: 999px;
+    color: #285a36;
+    background: #eaf5ed;
+    font-size: .58rem;
+    font-weight: 900;
+  }
+
+  .seat-availability.seat-full {
+    color: #813737;
+    background: #faeaea;
+  }
+
+  @media (max-width: 760px) {
+    .availability-snapshot {
+      margin: -2px 16px 12px;
+      padding: 0;
+    }
+  }
+}
+
 </style>
 </head>
 <body data-active-panel="planner-panel">
@@ -2733,14 +3276,18 @@ tbody tr:hover{background:#faf8fd}.course-code{color:var(--purple-dark);font-wei
     <nav class="tabbar" aria-label="Planner steps">
       <button class="tab" type="button" data-panel="planner-panel" data-stage="1" aria-selected="true">
         <span class="tab-number">1</span>
-        <span class="tab-copy"><strong>Set up my plan</strong><small>Answer one question at a time</small></span>
+        <span class="tab-copy"><strong>Set up my plan</strong><small>Answer the setup questions</small></span>
       </button>
-      <button class="tab locked" type="button" data-panel="weekly-panel" data-stage="2" aria-selected="false" aria-disabled="true">
+      <button class="tab locked" type="button" data-panel="courses-panel" data-stage="2" aria-selected="false" aria-disabled="true">
         <span class="tab-number">2</span>
-        <span class="tab-copy"><strong>Review my week</strong><small>Check when every class meets</small></span>
+        <span class="tab-copy"><strong>Choose my courses</strong><small>Review and change the recommendations</small></span>
       </button>
-      <button class="tab locked" type="button" data-panel="schedule-panel" data-stage="3" aria-selected="false" aria-disabled="true">
+      <button class="tab locked" type="button" data-panel="weekly-panel" data-stage="3" aria-selected="false" aria-disabled="true">
         <span class="tab-number">3</span>
+        <span class="tab-copy"><strong>Review my week</strong><small>See Monday through Friday together</small></span>
+      </button>
+      <button class="tab locked" type="button" data-panel="schedule-panel" data-stage="4" aria-selected="false" aria-disabled="true">
+        <span class="tab-number">4</span>
         <span class="tab-copy"><strong>Copy my table</strong><small>Transfer it to the paper form</small></span>
       </button>
     </nav>
@@ -2772,7 +3319,7 @@ tbody tr:hover{background:#faf8fd}.course-code{color:var(--purple-dark);font-wei
         <div class="single-question">
           <div class="field">
             <label for="studentName">Full name</label>
-            <input id="studentName" type="text" placeholder="Example: John Doe" autocomplete="name">
+            <input id="studentName" type="text" placeholder="Example: Beaumont Badger" autocomplete="name">
             <p class="wizard-error" id="studentNameError" role="alert" hidden>Please enter your name before continuing.</p>
           </div>
         </div>
@@ -2793,8 +3340,7 @@ tbody tr:hover{background:#faf8fd}.course-code{color:var(--purple-dark);font-wei
         <div class="single-question">
           <div class="field">
             <label for="studentId">Student ID <span class="optional-label">(optional)</span></label>
-            <input id="studentId" type="text" placeholder="Example: 123456" inputmode="numeric">
-            <p class="helper">Leave this blank if you do not know your Student ID.</p>
+            <input id="studentId" type="text" placeholder="Leave blank if you don’t know your Student ID" inputmode="numeric">
           </div>
         </div>
         <div class="wizard-actions">
@@ -3014,7 +3560,7 @@ tbody tr:hover{background:#faf8fd}.course-code{color:var(--purple-dark);font-wei
 <section class="panel" id="schedule-panel">
   <header class="simple-copy-header">
     <button class="week-back-link" id="backToWeeklyButton" type="button">← Review my week</button>
-    <span>3 of 3</span>
+    <span>4 of 4</span>
     <h2>Copy this onto your paper form</h2>
   </header>
 
@@ -3059,10 +3605,49 @@ tbody tr:hover{background:#faf8fd}.course-code{color:var(--purple-dark);font-wei
   <div id="creditProgressFill" hidden></div>
 </section>
 
+<section class="panel" id="courses-panel">
+  <header class="course-choice-header">
+    <button class="course-choice-back" id="backToSetupButton" type="button">← Edit answers</button>
+    <span>2 of 4</span>
+    <h2>Choose your courses</h2>
+    <p>Start with the recommended plan. You can change the optional courses before reviewing your week.</p>
+  </header>
+
+  <div class="course-credit-strip">
+    <strong id="selectionCreditCount">0 of 18 credits</strong>
+    <span id="selectionCreditMessage">Maximum: 18 credits</span>
+  </div>
+  <div class="availability-snapshot" id="availabilitySnapshot" aria-live="polite">
+    Seat availability is loading…
+  </div>
+
+  <section class="choice-section">
+    <div class="choice-section-heading">
+      <h3>Your courses</h3>
+      <small>Tap Swap beside any course. If another course depends on it, both courses will change together.</small>
+    </div>
+    <div class="selected-course-list" id="selectedCourseList"></div>
+  </section>
+
+  <section class="choice-section alternatives-choice-section">
+    <div class="choice-section-heading">
+      <h3>Add another course</h3>
+      <small>These choices fit without replacing a course already in your plan.</small>
+    </div>
+    <div class="course-choice-alternatives" id="courseChoiceAlternatives"></div>
+  </section>
+
+  <div class="course-choice-finish">
+    <button class="button course-choice-continue" id="goToWeeklyButton" type="button">
+      Use these courses — review my week →
+    </button>
+  </div>
+</section>
+
 <section class="panel" id="weekly-panel">
   <header class="simple-week-header">
-    <button class="week-back-link" id="backToStudentButton" type="button">← Edit answers</button>
-    <span>2 of 3</span>
+    <button class="week-back-link" id="backToStudentButton" type="button">← Courses</button>
+    <span>3 of 4</span>
     <h2>Review your whole week</h2>
   </header>
 
@@ -3125,6 +3710,260 @@ const els={
  printTotalCredits:$("printTotalCredits"),printAlternativeBody:$("printAlternativeBody"),
  printTimetableStudent:$("printTimetableStudent"),printWeeklyGrid:$("printWeeklyGrid")
 };
+
+const COURSE_AVAILABILITY_URL="./course_availability_fall_2026.json";
+let COURSE_AVAILABILITY=null;
+
+async function loadCourseAvailability(){
+ try{
+  const response=await fetch(
+   COURSE_AVAILABILITY_URL,
+   {cache:"no-store"}
+  );
+  if(!response.ok){
+   throw new Error(
+    `Availability file returned ${response.status}`
+   )
+  }
+  COURSE_AVAILABILITY=await response.json()
+ }catch(error){
+  console.warn(
+   "Course availability could not be loaded.",
+   error
+  );
+  COURSE_AVAILABILITY=null
+ }
+}
+
+function availabilitySectionKey(course,section){
+ return(
+  String(course).trim().replace(/\s+/g,"-")+
+  "-"+
+  String(section).padStart(2,"0")
+ )
+}
+
+function getSectionAvailability(course,section){
+ if(!COURSE_AVAILABILITY){
+  return{
+   known:false,
+   seatsOpen:null,
+   capacity:null,
+   status:"Unknown"
+  }
+ }
+
+ const key=availabilitySectionKey(course,section);
+ const record=COURSE_AVAILABILITY.section_index?.[key];
+
+ if(!record){
+  return{
+   known:false,
+   seatsOpen:null,
+   capacity:null,
+   status:"Unknown"
+  }
+ }
+
+ return{
+  known:true,
+  seatsOpen:Number(record.seats_open??0),
+  capacity:Number(record.capacity??0),
+  status:record.status||"Unknown"
+ }
+}
+
+function sectionHasSeats(course,section){
+ const availability=getSectionAvailability(
+  course,
+  section
+ );
+ if(!availability.known)return true;
+
+ return(
+  String(availability.status).toLowerCase()!=="full"&&
+  availability.seatsOpen>0
+ )
+}
+
+function sectionAvailabilityForItem(item){
+ const section=
+  item.course==="PTH 101"
+   ?els.pthSection.value
+   :item.section;
+
+ return getSectionAvailability(
+  item.course,
+  section
+ )
+}
+
+function availabilityLabel(course,section){
+ const availability=getSectionAvailability(
+  course,
+  section
+ );
+
+ if(!availability.known){
+  return"Availability not listed"
+ }
+
+ if(
+  String(availability.status).toLowerCase()==="full"||
+  availability.seatsOpen<=0
+ ){
+  return"Full"
+ }
+
+ return`${availability.seatsOpen} seat${
+  availability.seatsOpen===1?"":"s"
+ } open`
+}
+
+function availabilityLabelForItem(item){
+ const section=
+  item.course==="PTH 101"
+   ?els.pthSection.value
+   :item.section;
+ return availabilityLabel(item.course,section)
+}
+
+function availabilitySnapshotLabel(){
+ if(!COURSE_AVAILABILITY?.last_updated){
+  return"Seat availability not loaded — verify seats before registration."
+ }
+
+ const[year,month,day]=
+  COURSE_AVAILABILITY.last_updated.split("-");
+
+ return(
+  `Seat availability snapshot: ${month}/${day}/${year}. `+
+  "Seats may have changed."
+ )
+}
+
+function populatePthAvailability(){
+ const sections=
+  COURSE_AVAILABILITY?.courses?.["PTH 101"]?.sections||
+  [];
+
+ if(!sections.length)return;
+
+ const previous=els.pthSection.value;
+
+ els.pthSection.innerHTML=sections.map(section=>{
+  const full=
+   String(section.status).toLowerCase()==="full"||
+   Number(section.seats_open)<=0;
+
+  const label=full
+   ?`${section.section} — Full`
+   :`${section.section} — ${section.seats_open} seat${
+     Number(section.seats_open)===1?"":"s"
+    } open`;
+
+  return`<option
+   value="${esc(section.section)}"
+   ${full?"disabled":""}
+  >${esc(label)}</option>`
+ }).join("");
+
+ const previousSection=sections.find(
+  section=>section.section===previous
+ );
+ const previousOpen=
+  previousSection&&
+  String(previousSection.status).toLowerCase()!=="full"&&
+  Number(previousSection.seats_open)>0;
+
+ const firstOpen=sections.find(
+  section=>
+   String(section.status).toLowerCase()!=="full"&&
+   Number(section.seats_open)>0
+ );
+
+ if(previousOpen){
+  els.pthSection.value=previous
+ }else if(firstOpen){
+  els.pthSection.value=firstOpen.section
+ }
+}
+
+function availabilityExtraCoreCandidates(){
+ if(!COURSE_AVAILABILITY)return[];
+
+ const areaByCourse=new Map();
+ for(const row of DATA.sectionOptions){
+  if(!areaByCourse.has(row["Course"])){
+   areaByCourse.set(
+    row["Course"],
+    row["Core Area"]
+   )
+  }
+ }
+
+ const candidates=[];
+
+ for(const[courseCode,courseRecord] of
+     Object.entries(COURSE_AVAILABILITY.courses||{})){
+  const coreArea=areaByCourse.get(courseCode);
+  if(!coreArea||coreArea==="Composition")continue;
+
+  for(const sec of courseRecord.sections||[]){
+   if(
+    String(sec.status).toLowerCase()==="full"||
+    Number(sec.seats_open)<=0
+   )continue;
+
+   const section=String(sec.section).padStart(2,"0");
+   const alreadyEmbedded=DATA.sectionOptions.some(row=>
+    row["Course"]===courseCode&&
+    String(row["Sec."]).padStart(2,"0")===section
+   );
+   if(alreadyEmbedded)continue;
+
+   const course={
+    type:"Core Course",
+    course:courseCode,
+    section,
+    title:sec.title||courseCode,
+    credits:Number(sec.credits||0),
+    days:String(sec.days||"")
+     .replaceAll("Mon","M")
+     .replaceAll("Tue","T")
+     .replaceAll("Wed","W")
+     .replaceAll("Thu","R")
+     .replaceAll("Fri","F")
+     .replace(/[,\s]+/g,""),
+    time:sec.time||"",
+    notes:`Selected from the ${COURSE_AVAILABILITY.last_updated||"current"} availability snapshot.`,
+    coreArea
+   };
+
+   if(!course.days||!course.time)continue;
+
+   candidates.push({
+    row:{
+     "Core Area":coreArea,
+     "Course":courseCode,
+     "Sec.":section,
+     "Title":course.title,
+     "Credits":course.credits,
+     "Days":course.days,
+     "Start":course.time.split("-")[0]?.trim()||"",
+     "End":course.time.split("-")[1]?.trim()||""
+    },
+    course,
+    replacements:[],
+    replacementText:`${coreArea} option`,
+    isAvailabilityCandidate:true
+   })
+  }
+ }
+
+ return candidates
+}
+
 const esc=v=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
 function fill(select,values){select.innerHTML=values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("")}
 fill(els.major,DATA.majors);
@@ -3172,7 +4011,11 @@ function languageCourseFor(language,placement,plan){
  if(language==="No language selected"){
   for(const option of NO_LANGUAGE_PREFERENCE_ORDER){
    const course=LANGUAGE_COURSES[option]["Elementary (101-102)"];
-   if(course&&!conflicts(course,plan)){
+   if(
+    course&&
+    sectionHasSeats(course.course,course.section)&&
+    !conflicts(course,plan)
+   ){
     const selected=clone(course,"Core Course");
     selected.notes="No language selected; scheduled as one available elementary language option. Other elementary languages are shown as alternatives.";
     return selected;
@@ -3182,7 +4025,11 @@ function languageCourseFor(language,placement,plan){
  }
 
  const course=(LANGUAGE_COURSES[language]||{})[placement];
- if(!course||conflicts(course,plan))return null;
+ if(
+  !course||
+  !sectionHasSeats(course.course,course.section)||
+  conflicts(course,plan)
+ )return null;
  return clone(course,"Core Course");
 }
 
@@ -3246,6 +4093,7 @@ function fillPlanTowardCreditLimit(plan,limit=MAX_CREDITS){
   if(selectedCourses.has(row["Course"]))continue;
 
   const course=optionCourse(row);
+  if(!sectionHasSeats(course.course,course.section))continue;
   if(!grouped.has(row["Core Area"]))grouped.set(row["Core Area"],[]);
   grouped.get(row["Core Area"]).push(course);
  }
@@ -3377,13 +4225,47 @@ function build({major,placement,englishPlacement,language,languagePlacement,incl
  fillPlanTowardCreditLimit(plan,MAX_CREDITS);
  return plan;
 }
-function current(){return build({
- major:els.major.value,
- placement:els.placement.value,
- englishPlacement:els.englishPlacement.value,
- language:els.language.value,
- languagePlacement:els.languagePlacement.value
-})}
+let customPlan=null;
+let customPlanSignature="";
+
+function setupSignature(){
+ return[
+  els.major.value,
+  els.placement.value,
+  els.englishPlacement.value,
+  els.language.value,
+  els.languagePlacement.value,
+  els.pthSection.value
+ ].join("|")
+}
+
+function clonePlanState(plan){
+ const copy=plan.map(item=>({...item}));
+ copy.planningMeta={...(plan.planningMeta||{})};
+ return copy
+}
+
+function recommendedPlan(){
+ return build({
+  major:els.major.value,
+  placement:els.placement.value,
+  englishPlacement:els.englishPlacement.value,
+  language:els.language.value,
+  languagePlacement:els.languagePlacement.value
+ })
+}
+
+function initializeCourseChoices(){
+ customPlan=clonePlanState(recommendedPlan());
+ customPlanSignature=setupSignature()
+}
+
+function current(){
+ if(customPlan&&customPlanSignature===setupSignature())return customPlan;
+ customPlan=null;
+ customPlanSignature="";
+ return recommendedPlan()
+}
 function fixed(){return build({
  major:els.major.value,
  placement:els.placement.value,
@@ -3769,6 +4651,873 @@ function alternatives(){
   ...generalSuggestions
  ]
 }
+
+function planItemKey(item){
+ const section=item.course==="PTH 101"?els.pthSection.value:item.section;
+ return`${item.course}|${String(section).padStart(2,"0")}`
+}
+
+function isLockedSelectedCourse(item){
+ return(
+  item.type==="Major Course"||
+  item.course==="PTH 101"||
+  ["ENG 105","ENG 121","ENG 123"].includes(item.course)
+ )
+}
+
+
+function effectiveMathPlacement(){
+ return els.placement.value==="Test Not Taken"
+  ?"MTH 100"
+  :els.placement.value
+}
+
+function planRequirementErrors(plan){
+ const codes=new Set(plan.map(item=>item.course));
+ const errors=[];
+
+ const has=course=>codes.has(course);
+
+ // A student placed into MTH 121 has satisfied the MTH 111
+ // prerequisite level. Otherwise MTH 111 must remain in the plan
+ // when it is being used as a prerequisite/corequisite.
+ const math111RequirementMet=
+  has("MTH 111")||
+  has("MTH 121")||
+  effectiveMathPlacement()==="MTH 121";
+
+ if(has("CSC 100")&&!math111RequirementMet){
+  errors.push(
+   "CSC 100 requires MTH 111 as a prerequisite/corequisite."
+  )
+ }
+
+ if(has("CHM 111")&&!math111RequirementMet){
+  errors.push(
+   "CHM 111 requires MTH 111 as a prerequisite/corequisite."
+  )
+ }
+
+ // MTH 100 and its recitation are a corequisite pair.
+ if(has("MTH 100")&&!has("MTH 101")){
+  errors.push("MTH 100 requires corequisite MTH 101.")
+ }
+ if(has("MTH 101")&&!has("MTH 100")){
+  errors.push("MTH 101 must be taken with MTH 100.")
+ }
+
+ // General Chemistry I must keep both laboratory and recitation.
+ if(has("CHM 111")&&!has("CHM 113")){
+  errors.push("CHM 111 requires corequisite CHM 113.")
+ }
+ if(has("CHM 111")&&!has("CHM 115")){
+  errors.push("CHM 111 requires corequisite CHM 115.")
+ }
+ if(has("CHM 113")&&!has("CHM 111")){
+  errors.push("CHM 113 must be taken with CHM 111.")
+ }
+ if(has("CHM 115")&&!has("CHM 111")){
+  errors.push("CHM 115 must be taken with CHM 111.")
+ }
+
+ // DSC 240's CSC prerequisite must be completed before DSC 240;
+ // concurrent CSC 100 is not treated as completion.
+ if(has("DSC 240")){
+  errors.push(
+   "DSC 240 is deferred until its CSC prerequisite has been completed."
+  )
+ }
+
+ return errors
+}
+
+function planMeetsRequirements(plan){
+ return planRequirementErrors(plan).length===0
+}
+
+function proposedPlanForSelection(candidateItem,removeKeys){
+ const removeSet=new Set(removeKeys);
+ const proposed=current()
+  .filter(item=>!removeSet.has(planItemKey(item)))
+  .map(item=>({...item}));
+
+ proposed.push({...candidateItem.course});
+ return proposed
+}
+
+function allSelectionCandidates(){
+ const plan=current();
+ const selectedKeys=new Set(plan.map(planItemKey));
+ const selectedCourseCodes=new Set(plan.map(item=>item.course));
+ const seen=new Set();
+ const candidates=[];
+
+ const pushCandidate=item=>{
+  const key=planItemKey(item.course);
+
+  // Availability is an additional filter. Unknown sections remain usable.
+  if(
+   !sectionHasSeats(
+    item.course.course,
+    item.course.section
+   )
+  )return;
+
+  // Never offer the same course in a different section.
+  // A student already taking MTH 121, for example, should not see
+  // another MTH 121 section as either an Add or Swap choice.
+  if(
+   selectedKeys.has(key)||
+   selectedCourseCodes.has(item.course.course)||
+   seen.has(key)
+  )return;
+
+  seen.add(key);
+  candidates.push(item)
+ };
+
+ alternatives().forEach(pushCandidate);
+
+ DATA.sectionOptions.forEach(row=>{
+  if(row["Core Area"]==="Composition")return;
+  const course=optionCourse(row);
+  if(course.type==="Major Course")return;
+  pushCandidate({
+   row,
+   course,
+   replacements:[],
+   replacementText:`${row["Core Area"]||"Core Course"} option`,
+   isGeneralSelectionCandidate:true
+  })
+ });
+
+ availabilityExtraCoreCandidates().forEach(
+  pushCandidate
+ );
+
+ return candidates
+}
+
+function preferredRemovalOrder(candidateItem,plan){
+ const preferred=(candidateItem.replacements||[])
+  .map(replacement=>plan.find(item=>planItemKey(item)===planItemKey(replacement)))
+  .filter(Boolean)
+  .filter(item=>!isLockedSelectedCourse(item));
+
+ const remaining=plan
+  .filter(item=>!isLockedSelectedCourse(item))
+  .filter(item=>!preferred.some(p=>planItemKey(p)===planItemKey(item)))
+  .sort((a,b)=>coreFillPriority(a)-coreFillPriority(b));
+
+ return[...preferred,...remaining]
+}
+
+function selectionActionFor(candidateItem){
+ const plan=current();
+ const candidate=candidateItem.course;
+ const candidateKey=planItemKey(candidate);
+
+ if(plan.some(item=>planItemKey(item)===candidateKey)){
+  return{
+   enabled:false,
+   label:"Selected",
+   message:"Already in your plan.",
+   removeKeys:[],
+   requiredSwap:false
+  }
+ }
+
+ const directConflicts=plan.filter(existing=>conflict(candidate,existing));
+
+ // A required course may be replaced as part of a swap.
+ // It still cannot be removed on its own.
+ const explicitReplacements=(candidateItem.replacements||[])
+  .map(replacement=>
+   plan.find(item=>planItemKey(item)===planItemKey(replacement))
+  )
+  .filter(Boolean);
+
+ const removeKeys=new Set(
+  [...directConflicts,...explicitReplacements].map(planItemKey)
+ );
+
+ let tempPlan=plan.filter(item=>!removeKeys.has(planItemKey(item)));
+
+ // If credits still exceed 18, only OPTIONAL courses may be removed
+ // merely to make room. Required courses are removed only when the
+ // student is actually swapping them because of a conflict/replacement.
+ if(credits(tempPlan)+Number(candidate.credits||0)>MAX_CREDITS){
+  for(const removable of preferredRemovalOrder(candidateItem,tempPlan)){
+   if(isLockedSelectedCourse(removable))continue;
+   if(removeKeys.has(planItemKey(removable)))continue;
+
+   removeKeys.add(planItemKey(removable));
+   tempPlan=tempPlan.filter(
+    item=>planItemKey(item)!==planItemKey(removable)
+   );
+
+   if(
+    credits(tempPlan)+Number(candidate.credits||0)<=MAX_CREDITS
+   )break
+  }
+ }
+
+ if(credits(tempPlan)+Number(candidate.credits||0)>MAX_CREDITS){
+  return{
+   enabled:false,
+   label:"18-credit limit",
+   message:"No optional course can be removed to make this fit under 18 credits.",
+   removeKeys:[],
+   requiredSwap:false
+  }
+ }
+
+ if(tempPlan.some(existing=>conflict(candidate,existing))){
+  return{
+   enabled:false,
+   label:"Unavailable",
+   message:"This course still conflicts with the current schedule.",
+   removeKeys:[],
+   requiredSwap:false
+  }
+ }
+
+ const proposedPlan=[
+  ...tempPlan.map(item=>({...item})),
+  {...candidate}
+ ];
+ const requirementErrors=planRequirementErrors(proposedPlan);
+
+ if(requirementErrors.length){
+  return{
+   enabled:false,
+   label:"Prerequisite",
+   message:requirementErrors[0],
+   removeKeys:[],
+   requiredSwap:false,
+   requirementErrors
+  }
+ }
+
+ const removed=plan.filter(
+  item=>removeKeys.has(planItemKey(item))
+ );
+ const requiredRemoved=removed.filter(isLockedSelectedCourse);
+ const optionalRemoved=removed.filter(
+  item=>!isLockedSelectedCourse(item)
+ );
+
+ let message;
+ if(requiredRemoved.length){
+  const requiredNames=requiredRemoved.map(
+   item=>`${item.course}-${item.section}`
+  );
+  const optionalNames=optionalRemoved.map(
+   item=>`${item.course}-${item.section}`
+  );
+
+  message=
+   `Swaps out required ${requiredNames.join(" + ")}`+
+   (
+    optionalNames.length
+     ?` and ${optionalNames.join(" + ")}`
+     :""
+   )+
+   ". Review this change with your advisor.";
+ }else if(optionalRemoved.length){
+  message=
+   `Replaces ${optionalRemoved.map(
+    item=>`${item.course}-${item.section}`
+   ).join(" + ")}.`;
+ }else{
+  message=
+   `${candidate.credits} credit${
+    Number(candidate.credits)===1?"":"s"
+   }; fits the current schedule.`;
+ }
+
+ return{
+  enabled:true,
+  label:removed.length?"Swap":"Add",
+  message,
+  removeKeys:[...removeKeys],
+  requiredSwap:requiredRemoved.length>0
+ }
+}
+
+function removeSelectedCourseByKey(key){
+ if(!customPlan)return;
+ const item=customPlan.find(course=>planItemKey(course)===key);
+ if(!item||isLockedSelectedCourse(item))return;
+
+ const proposed=customPlan.filter(
+  course=>planItemKey(course)!==key
+ );
+
+ if(!planMeetsRequirements(proposed))return;
+
+ customPlan=proposed;
+ customPlan.planningMeta={};
+ openSwapCourseKey=null;
+ render()
+}
+
+function applySelectionCandidate(key){
+ if(!customPlan)return;
+ const candidateItem=allSelectionCandidates().find(
+  item=>planItemKey(item.course)===key
+ );
+ if(!candidateItem)return;
+
+ const action=selectionActionFor(candidateItem);
+ if(!action.enabled)return;
+
+ const proposed=proposedPlanForSelection(
+  candidateItem,
+  action.removeKeys
+ );
+
+ // Final safety check at the moment the student makes the change.
+ if(!planMeetsRequirements(proposed))return;
+
+ customPlan=proposed;
+ customPlan.planningMeta={};
+ openSwapCourseKey=null;
+ render()
+}
+
+
+let openSwapCourseKey=null;
+
+function expandSwapRemovalKeys(plan,initialKeys){
+ const removeKeys=new Set(initialKeys);
+ let changed=true;
+
+ while(changed){
+  changed=false;
+
+  const addKey=item=>{
+   if(!item)return;
+   const key=planItemKey(item);
+   if(removeKeys.has(key))return;
+   removeKeys.add(key);
+   changed=true
+  };
+
+  const isRemoved=courseCode=>
+   plan.some(item=>
+    item.course===courseCode&&
+    removeKeys.has(planItemKey(item))
+   );
+
+  const findCourse=courseCode=>
+   plan.find(item=>item.course===courseCode);
+
+  // MTH 100 and MTH 101 are a corequisite bundle.
+  if(isRemoved("MTH 100"))addKey(findCourse("MTH 101"));
+  if(isRemoved("MTH 101"))addKey(findCourse("MTH 100"));
+
+  // CHM 111, CHM 113, and CHM 115 move together as a corequisite bundle.
+  if(
+   isRemoved("CHM 111")||
+   isRemoved("CHM 113")||
+   isRemoved("CHM 115")
+  ){
+   addKey(findCourse("CHM 111"));
+   addKey(findCourse("CHM 113"));
+   addKey(findCourse("CHM 115"));
+  }
+
+  // When MTH 111 is being taken concurrently to satisfy CSC 100,
+  // swapping MTH 111 also swaps CSC 100 rather than blocking the change.
+  if(
+   isRemoved("MTH 111")&&
+   effectiveMathPlacement()!=="MTH 121"
+  ){
+   addKey(findCourse("CSC 100"));
+
+   // Engineering may also be using the same concurrent MTH 111
+   // requirement for CHM 111. Keep that dependency valid too.
+   if(findCourse("CHM 111")){
+    addKey(findCourse("CHM 111"));
+    addKey(findCourse("CHM 113"));
+    addKey(findCourse("CHM 115"));
+   }
+  }
+
+  // If CSC 100 were ever supporting another course in this first-term
+  // plan, that dependent course would join the bundle here.
+  if(isRemoved("CSC 100")&&findCourse("DSC 240")){
+   addKey(findCourse("DSC 240"));
+  }
+ }
+
+ return[...removeKeys]
+}
+
+function targetedSwapAction(candidateItem,targetItem){
+ const plan=current();
+ const candidate=candidateItem.course;
+ const targetKey=planItemKey(targetItem);
+
+ if(candidate.course===targetItem.course){
+  return{
+   enabled:false,
+   label:"Same course",
+   message:"Choose a different course.",
+   removeKeys:[]
+  }
+ }
+
+ if(plan.some(item=>planItemKey(item)===planItemKey(candidate))){
+  return{
+   enabled:false,
+   label:"Selected",
+   message:"Already in your plan.",
+   removeKeys:[]
+  }
+ }
+
+ // Start with the course the student explicitly chose to swap.
+ let removeKeys=expandSwapRemovalKeys(plan,[targetKey]);
+ let removeSet=new Set(removeKeys);
+
+ // The replacement itself may conflict with other selected courses.
+ // Those courses also join this one swap.
+ const conflicting=plan.filter(item=>
+  !removeSet.has(planItemKey(item))&&
+  conflict(candidate,item)
+ );
+ removeKeys=expandSwapRemovalKeys(
+  plan,
+  [...removeKeys,...conflicting.map(planItemKey)]
+ );
+ removeSet=new Set(removeKeys);
+
+ let tempPlan=plan.filter(
+  item=>!removeSet.has(planItemKey(item))
+ );
+
+ // If the replacement would exceed 18 credits, remove optional courses
+ // only as needed to make room, then expand any dependency bundle.
+ if(credits(tempPlan)+Number(candidate.credits||0)>MAX_CREDITS){
+  for(const removable of preferredRemovalOrder(candidateItem,tempPlan)){
+   if(isLockedSelectedCourse(removable))continue;
+   if(removeSet.has(planItemKey(removable)))continue;
+
+   removeKeys=expandSwapRemovalKeys(
+    plan,
+    [...removeKeys,planItemKey(removable)]
+   );
+   removeSet=new Set(removeKeys);
+   tempPlan=plan.filter(
+    item=>!removeSet.has(planItemKey(item))
+   );
+
+   if(
+    credits(tempPlan)+Number(candidate.credits||0)<=MAX_CREDITS
+   )break
+  }
+ }
+
+ if(credits(tempPlan)+Number(candidate.credits||0)>MAX_CREDITS){
+  return{
+   enabled:false,
+   label:"18-credit limit",
+   message:"This replacement cannot fit under 18 credits.",
+   removeKeys:[]
+  }
+ }
+
+ const proposed=[
+  ...tempPlan.map(item=>({...item})),
+  {...candidate}
+ ];
+
+ // The bundle expansion is designed to preserve the existing
+ // prerequisite/corequisite structure. The replacement itself must
+ // also leave a valid resulting plan.
+ const requirementErrors=planRequirementErrors(proposed);
+ if(requirementErrors.length){
+  return{
+   enabled:false,
+   label:"Unavailable",
+   message:requirementErrors[0],
+   removeKeys:[],
+   requirementErrors
+  }
+ }
+
+ const removed=plan.filter(
+  item=>removeSet.has(planItemKey(item))
+ );
+
+ return{
+  enabled:true,
+  label:"Swap",
+  message:"",
+  removeKeys:[...removeSet],
+  removed,
+  proposed
+ }
+}
+
+
+function preferredLanguageCourseCodes(){
+ const preference=els.language.value;
+ const placement=
+  els.languagePlacement.value==="I don't know"
+   ?"Elementary (101-102)"
+   :els.languagePlacement.value;
+
+ if(preference==="No language selected"){
+  return["FRE 101","ITA 101","SPA 101"]
+ }
+
+ const course=LANGUAGE_COURSES[preference]?.[placement];
+ return course?[course.course]:[]
+}
+
+function selectedCourseArea(item){
+ if(item.coreArea)return item.coreArea;
+
+ const exactRow=DATA.sectionOptions.find(row=>
+  row["Course"]===item.course&&
+  String(row["Sec."]).padStart(2,"0")===
+   String(item.section).padStart(2,"0")
+ );
+ if(exactRow)return exactRow["Core Area"];
+
+ if(isElementaryLanguageCourse(item))return"Language & Culture";
+
+ if(["ENG 105","ENG 121","ENG 123"].includes(item.course)){
+  return"Composition"
+ }
+
+ return item.type==="Major Course"?"Major Course":"Core Course"
+}
+
+function swapPreferenceScore(targetItem,candidateItem,action){
+ const candidate=candidateItem.course;
+ const preferredLanguageCodes=
+  new Set(preferredLanguageCourseCodes());
+
+ const targetArea=selectedCourseArea(targetItem);
+ const candidateArea=
+  candidateItem.row?.["Core Area"]||
+  candidate.coreArea||
+  selectedCourseArea(candidate);
+
+ const removedCredits=(action.removed||current().filter(item=>
+  action.removeKeys.includes(planItemKey(item))
+ )).reduce(
+  (sum,item)=>sum+Number(item.credits||0),
+  0
+ );
+
+ const resultingCredits=credits(action.proposed||[]);
+ const creditDistance=Math.abs(
+  removedCredits-Number(candidate.credits||0)
+ );
+
+ let score=0;
+
+ // Explicit student language preference is the strongest soft preference.
+ if(preferredLanguageCodes.has(candidate.course)){
+  score+=100000
+ }
+
+ // When replacing a language course, prefer another language choice.
+ if(
+  targetArea==="Language & Culture"&&
+  candidateArea==="Language & Culture"
+ ){
+  score+=60000
+ }
+
+ // For Core Courses, prefer alternatives satisfying the same broad
+ // Core area before sending the student to a different area.
+ if(
+  targetArea!=="Major Course"&&
+  targetArea===candidateArea
+ ){
+  score+=50000
+ }
+
+ // Preserve as much of the student's already-built schedule as possible.
+ score-=action.removeKeys.length*5000;
+
+ // Prefer a swap that keeps the overall credit load near the current one.
+ score-=creditDistance*1000;
+ score+=resultingCredits*250;
+
+ // Prefer more available seats among otherwise good choices.
+ const availability=getSectionAvailability(
+  candidate.course,
+  candidate.section
+ );
+ if(availability.known){
+  score+=Math.min(availability.seatsOpen,30)*100
+ }
+
+ // Use the planner's established Core priority as a final preference.
+ score+=coreFillPriority(candidate)/20;
+
+ return score
+}
+
+function recommendedSwapLabel(index){
+ return index===0
+  ?"Best match"
+  :`Recommended ${index+1}`
+}
+
+function swapCandidatesForCourse(targetItem){
+ return allSelectionCandidates()
+  .map(item=>({
+   item,
+   action:targetedSwapAction(item,targetItem)
+  }))
+  .filter(entry=>entry.action.enabled)
+  .map(entry=>({
+   ...entry,
+   preferenceScore:swapPreferenceScore(
+    targetItem,
+    entry.item,
+    entry.action
+   )
+  }))
+  .sort((a,b)=>
+   b.preferenceScore-a.preferenceScore||
+   a.action.removeKeys.length-b.action.removeKeys.length||
+   String(a.item.row?.["Core Area"]||"").localeCompare(
+    String(b.item.row?.["Core Area"]||"")
+   )||
+   String(a.item.course.course).localeCompare(
+    String(b.item.course.course)
+   )||
+   String(a.item.course.section).localeCompare(
+    String(b.item.course.section)
+   )
+  )
+  .slice(0,3)
+}
+
+function addOnlyCandidates(){
+ return allSelectionCandidates()
+  .map(item=>({item,action:selectionActionFor(item)}))
+  .filter(entry=>
+   entry.action.enabled&&
+   entry.action.removeKeys.length===0
+  )
+  .sort((a,b)=>
+   String(a.item.row?.["Core Area"]||"").localeCompare(
+    String(b.item.row?.["Core Area"]||"")
+   )||
+   String(a.item.course.course).localeCompare(
+    String(b.item.course.course)
+   )||
+   String(a.item.course.section).localeCompare(
+    String(b.item.course.section)
+   )
+  )
+  .slice(0,8)
+}
+
+function swapImpactText(targetItem,action,plan){
+ const removed=action.removed||plan.filter(item=>
+  action.removeKeys.includes(planItemKey(item))
+ );
+ const targetKey=planItemKey(targetItem);
+ const extraRemoved=removed.filter(
+  item=>planItemKey(item)!==targetKey
+ );
+
+ if(!extraRemoved.length){
+  return`Replaces ${targetItem.course}-${targetItem.section}.`
+ }
+
+ return(
+  `Replaces ${targetItem.course}-${targetItem.section}. `+
+  `This swap also changes ${
+   extraRemoved.map(
+    item=>`${item.course}-${item.section}`
+   ).join(" + ")
+  }.`
+ )
+}
+
+function toggleSwapPanel(key){
+ openSwapCourseKey=openSwapCourseKey===key?null:key;
+ renderCourseSelection()
+}
+
+function applyTargetedSwap(candidateKey,targetKey){
+ if(!customPlan)return;
+
+ const targetItem=customPlan.find(
+  item=>planItemKey(item)===targetKey
+ );
+ if(!targetItem)return;
+
+ const candidateItem=allSelectionCandidates().find(
+  item=>planItemKey(item.course)===candidateKey
+ );
+ if(!candidateItem)return;
+
+ const action=targetedSwapAction(
+  candidateItem,
+  targetItem
+ );
+ if(!action.enabled)return;
+
+ const proposed=action.proposed||proposedPlanForSelection(
+  candidateItem,
+  action.removeKeys
+ );
+
+ if(!planMeetsRequirements(proposed))return;
+ if(credits(proposed)>MAX_CREDITS)return;
+
+ customPlan=proposed;
+ customPlan.planningMeta={};
+ openSwapCourseKey=null;
+ render()
+}
+
+function renderCourseSelection(){
+ const plan=current();
+ const selectedList=$("selectedCourseList");
+ const alternativeList=$("courseChoiceAlternatives");
+ const count=$("selectionCreditCount");
+ const message=$("selectionCreditMessage");
+
+ if(count)count.textContent=`${credits(plan)} of ${MAX_CREDITS} credits`;
+ if(message){
+  message.textContent=
+   credits(plan)===MAX_CREDITS
+    ?"Your plan is at the 18-credit maximum."
+    :`${MAX_CREDITS-credits(plan)} credit${
+      MAX_CREDITS-credits(plan)===1?"":"s"
+     } available.`;
+ }
+
+ if(selectedList){
+  selectedList.innerHTML=plan.map(item=>{
+   const locked=isLockedSelectedCourse(item);
+   const section=
+    item.course==="PTH 101"
+     ?els.pthSection.value
+     :item.section;
+   const key=planItemKey(item);
+   const swaps=swapCandidatesForCourse(item);
+   const swapOpen=openSwapCourseKey===key;
+
+   const swapPanel=swapOpen
+    ?`<div class="course-swap-panel">
+       <div class="course-swap-panel-title">
+        <strong>3 recommended swaps for ${esc(item.course)}-${esc(section)}</strong>
+        <button
+         type="button"
+         class="close-swap-button"
+         data-close-swap="${esc(key)}"
+         aria-label="Close swap choices"
+        >×</button>
+       </div>
+       ${
+        swaps.length
+         ?swaps.map(({item:candidateItem,action},swapIndex)=>{
+           const candidate=candidateItem.course;
+           const candidateSection=candidate.section;
+           const impact=swapImpactText(item,action,plan);
+           const changesTwo=action.removeKeys.length>1;
+
+           return`<article class="swap-option-card ${changesTwo?"multi-course-swap":""}">
+            <div class="swap-option-copy">
+             <span class="swap-recommendation-rank">${esc(recommendedSwapLabel(swapIndex))}</span>
+             <div>
+              <strong>${esc(candidate.course)}-${esc(candidateSection)}</strong>
+              <span>${esc(candidate.title)}</span>
+             </div>
+             <small>${esc(candidate.days)} · ${esc(candidate.time)} · ${esc(candidate.credits)} cr</small>
+             <span class="seat-availability">${esc(availabilityLabel(candidate.course,candidate.section))}</span>
+             <p>${esc(impact)}</p>
+            </div>
+            <button
+             type="button"
+             class="choose-swap-button"
+             data-swap-candidate="${esc(planItemKey(candidate))}"
+             data-swap-target="${esc(key)}"
+            >Choose</button>
+           </article>`
+          }).join("")
+         :`<div class="choice-empty-state">
+            No swap options meet this course’s schedule and prerequisite/corequisite requirements.
+           </div>`
+       }
+      </div>`
+    :"";
+
+   return`<div class="selected-course-group">
+    <article class="selected-choice-card ${locked?"locked-course":"optional-course"}">
+     <div class="selected-choice-main">
+      <div class="selected-course-name-row">
+       <strong>${esc(item.course)}-${esc(section)}</strong>
+       <button
+        type="button"
+        class="swap-course-button"
+        data-swap-course="${esc(key)}"
+        ${swaps.length?"":"disabled"}
+       >${swaps.length?`Swap ${esc(item.course)}`:"No swaps"}</button>
+      </div>
+      <span class="selected-course-title">${esc(item.title)}</span>
+      <small>${esc(item.days)} · ${esc(item.time)} · ${esc(item.credits)} cr</small>
+      <span class="seat-availability ${availabilityLabelForItem(item)==="Full"?"seat-full":""}">${esc(availabilityLabelForItem(item))}</span>
+     </div>
+     ${
+      locked
+       ?`<span class="course-lock-label">Required</span>`
+       :`<button
+          type="button"
+          class="remove-course-button"
+          data-remove-course="${esc(key)}"
+         >Remove</button>`
+     }
+    </article>
+    ${swapPanel}
+   </div>`
+  }).join("")
+ }
+
+ if(alternativeList){
+  const candidates=addOnlyCandidates();
+
+  alternativeList.innerHTML=candidates.length
+   ?candidates.map(({item,action})=>{
+      const course=item.course;
+      return`<article class="alternative-choice-card">
+       <div class="alternative-choice-copy">
+        <div>
+         <strong>${esc(course.course)}-${esc(course.section)}</strong>
+         <span>${esc(course.title)}</span>
+        </div>
+        <small>${esc(course.days)} · ${esc(course.time)} · ${esc(course.credits)} cr</small>
+        <span class="seat-availability">${esc(availabilityLabel(course.course,course.section))}</span>
+        <p>${esc(action.message)}</p>
+       </div>
+       <button
+        type="button"
+        class="alternative-action-button"
+        data-add-course="${esc(planItemKey(course))}"
+       >Add</button>
+      </article>`
+     }).join("")
+   :`<div class="choice-empty-state">
+      No additional course can be added without replacing something already selected.
+     </div>`
+ }
+}
+
 function badge(type){return`<span class="badge badge-${type==="Major Course"?"major":"core"}">${esc(type)}</span>`}
 
 function paperCourseCode(item){
@@ -4151,6 +5900,8 @@ function load(){
 }
 function render(){
  const plan=current(),c=credits(plan);
+ const snapshot=$("availabilitySnapshot");
+ if(snapshot)snapshot.textContent=availabilitySnapshotLabel();
  const creditTotal=$("creditLoadTotal");
  const creditMessage=$("creditLoadMessage");
  const creditFill=$("creditProgressFill");
@@ -4167,6 +5918,7 @@ function render(){
  }
 
  renderSchedule(plan);
+ renderCourseSelection();
  renderWeekly(plan);
  renderAlternatives();
  const noLanguage=els.language.value==="No language selected";
@@ -4286,8 +6038,9 @@ document.querySelectorAll("[data-wizard-back]").forEach(button=>{
 
 const PANEL_STAGES={
  "planner-panel":1,
- "weekly-panel":2,
- "schedule-panel":3
+ "courses-panel":2,
+ "weekly-panel":3,
+ "schedule-panel":4
 };
 let maxUnlockedStage=1;
 
@@ -4339,17 +6092,64 @@ document.querySelectorAll(".tab").forEach(tab=>{
 
 $("goToScheduleButton").addEventListener("click",()=>{
  if(!validateWizardStep(currentWizardStep))return;
+ initializeCourseChoices();
  render();
  unlockStage(2);
- activatePanel("weekly-panel")
+ activatePanel("courses-panel")
 });
-$("backToStudentButton").addEventListener("click",()=>activatePanel("planner-panel"));
-$("goToCourseTableButton").addEventListener("click",()=>{
+
+$("backToSetupButton").addEventListener("click",()=>activatePanel("planner-panel"));
+
+$("goToWeeklyButton").addEventListener("click",()=>{
  render();
  unlockStage(3);
+ activatePanel("weekly-panel")
+});
+
+$("backToStudentButton").addEventListener("click",()=>activatePanel("courses-panel"));
+
+$("goToCourseTableButton").addEventListener("click",()=>{
+ render();
+ unlockStage(4);
  activatePanel("schedule-panel")
 });
+
 $("backToWeeklyButton").addEventListener("click",()=>activatePanel("weekly-panel"));
+
+$("selectedCourseList").addEventListener("click",event=>{
+ const swapButton=event.target.closest("[data-swap-course]");
+ if(swapButton&&!swapButton.disabled){
+  toggleSwapPanel(swapButton.dataset.swapCourse);
+  return
+ }
+
+ const closeButton=event.target.closest("[data-close-swap]");
+ if(closeButton){
+  openSwapCourseKey=null;
+  renderCourseSelection();
+  return
+ }
+
+ const chooseButton=event.target.closest("[data-swap-candidate]");
+ if(chooseButton&&!chooseButton.disabled){
+  applyTargetedSwap(
+   chooseButton.dataset.swapCandidate,
+   chooseButton.dataset.swapTarget
+  );
+  return
+ }
+
+ const removeButton=event.target.closest("[data-remove-course]");
+ if(removeButton){
+  removeSelectedCourseByKey(removeButton.dataset.removeCourse)
+ }
+});
+
+$("courseChoiceAlternatives").addEventListener("click",event=>{
+ const button=event.target.closest("[data-add-course]");
+ if(!button||button.disabled)return;
+ applySelectionCandidate(button.dataset.addCourse)
+});
 
 $("printButton").addEventListener("click",()=>window.print());$("csvButton").addEventListener("click",exportCsv);
 $("resetButton").addEventListener("click",()=>{
@@ -4363,13 +6163,25 @@ $("resetButton").addEventListener("click",()=>{
  els.language.value="No language selected";
  els.languagePlacement.value="I don\'t know";
  els.pthSection.value="01";
+ customPlan=null;
+ customPlanSignature="";
+ openSwapCourseKey=null;
  maxUnlockedStage=1;
  unlockStage(1);
  showWizardStep(1,{focus:false});
  activatePanel("planner-panel");
  render()
 });
-load();renderRules();unlockStage(1);showWizardStep(1,{focus:false});render();
+async function startPlanner(){
+ load();
+ await loadCourseAvailability();
+ populatePthAvailability();
+ renderRules();
+ unlockStage(1);
+ showWizardStep(1,{focus:false});
+ render()
+}
+startPlanner();
 </script>
 </body>
 </html>
