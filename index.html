@@ -5311,7 +5311,76 @@ function recommendedSwapLabel(index){
   :`Recommended ${index+1}`
 }
 
+
+function pthSwapCandidatesForCourse(targetItem){
+ if(targetItem.course!=="PTH 101")return[];
+
+ const currentSection=String(
+  els.pthSection.value||targetItem.section||""
+ ).padStart(2,"0");
+
+ const records=Object.values(
+  COURSE_AVAILABILITY?.sections||{}
+ ).filter(record=>record.course==="PTH 101");
+
+ return records
+  .filter(record=>
+   String(record.section).padStart(2,"0")!==currentSection&&
+   String(record.status||"").toLowerCase()!=="full"&&
+   Number(record.seats_open)>0
+  )
+  .sort((a,b)=>
+   Number(b.seats_open)-Number(a.seats_open)||
+   String(a.section).localeCompare(String(b.section))
+  )
+  .map(record=>{
+   const section=String(record.section).padStart(2,"0");
+
+   return{
+    item:{
+     course:{
+      ...targetItem,
+      section,
+      days:String(record.days||"")
+       .replaceAll("Mon","M")
+       .replaceAll("Tue","T")
+       .replaceAll("Wed","W")
+       .replaceAll("Thu","R")
+       .replaceAll("Fri","F")
+       .replace(/[,\s]+/g,"")||targetItem.days,
+      time:record.time
+       ?record.time.replace("-", " - ")
+       :targetItem.time
+     },
+     row:null,
+     replacements:[]
+    },
+    action:{
+     enabled:true,
+     label:"Swap",
+     message:`Moves PTH 101 from section ${currentSection} to section ${section}.`,
+     removeKeys:[planItemKey(targetItem)],
+     removed:[targetItem],
+     proposed:current(),
+     pthSectionSwap:true
+    },
+    preferenceScore:Number(record.seats_open)*100
+   }
+  })
+}
+
+function swapCandidateActionKey(candidate){
+ if(candidate.course==="PTH 101"){
+  return`${candidate.course}|${String(candidate.section).padStart(2,"0")}`
+ }
+ return planItemKey(candidate)
+}
+
 function swapCandidatesForCourse(targetItem){
+ if(targetItem.course==="PTH 101"){
+  return pthSwapCandidatesForCourse(targetItem).slice(0,3)
+ }
+
  return allSelectionCandidates()
   .map(item=>({
    item,
@@ -5364,6 +5433,10 @@ function addOnlyCandidates(){
 }
 
 function swapImpactText(targetItem,action,plan){
+ if(action.pthSectionSwap){
+  return action.message
+ }
+
  const removed=action.removed||plan.filter(item=>
   action.removeKeys.includes(planItemKey(item))
  );
@@ -5398,6 +5471,29 @@ function applyTargetedSwap(candidateKey,targetKey){
   item=>planItemKey(item)===targetKey
  );
  if(!targetItem)return;
+
+ if(targetItem.course==="PTH 101"){
+  const parts=String(candidateKey).split("|");
+  const newSection=String(parts[1]||"").padStart(2,"0");
+  const availability=getSectionAvailability(
+   "PTH 101",
+   newSection
+  );
+
+  if(
+   !availability.known||
+   String(availability.status).toLowerCase()==="full"||
+   availability.seatsOpen<=0
+  )return;
+
+  els.pthSection.value=newSection;
+
+  // Keep all prior custom Add/Swap/Remove choices intact.
+  customPlanSignature=setupSignature();
+  openSwapCourseKey=null;
+  render();
+  return
+ }
 
  const candidateItem=allSelectionCandidates().find(
   item=>planItemKey(item.course)===candidateKey
@@ -5485,13 +5581,17 @@ function renderCourseSelection(){
             <button
              type="button"
              class="choose-swap-button"
-             data-swap-candidate="${esc(planItemKey(candidate))}"
+             data-swap-candidate="${esc(swapCandidateActionKey(candidate))}"
              data-swap-target="${esc(key)}"
             >Choose</button>
            </article>`
           }).join("")
          :`<div class="choice-empty-state">
-            No swap options meet this course’s schedule and prerequisite/corequisite requirements.
+            ${
+             item.course==="PTH 101"
+              ?"No other PTH 101 section currently has seats open."
+              :"No swap options meet this course’s schedule and prerequisite/corequisite requirements."
+            }
            </div>`
        }
       </div>`
