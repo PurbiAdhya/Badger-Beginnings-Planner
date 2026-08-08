@@ -6,7 +6,7 @@
   "availability_granularity": "section",
   "section_records_are_authoritative": true,
   "section_data_available": true,
-  "update_note": "Manual section-level availability snapshot. Use the top-level `sections` records, or the compatibility `section_index`, for all section-specific availability decisions. Values under `course_level_only_availability` come from an older aggregate report and must not be assigned to a specific section.",
+  "update_note": "Manual section-level availability snapshot compiled from the provided course availability screenshots. Use top-level `sections` records for section-specific decisions. Course summaries are derived from the exact section records where available.",
   "sections": {
     "BIO-101-01": {
       "course": "BIO 101",
@@ -350,6 +350,215 @@
       "availability_source": "section-level screenshot",
       "availability_exact": true
     },
+    "ENG-105-01": {
+      "course": "ENG 105",
+      "section": "01",
+      "display_code": "ENG-105-01",
+      "title": "COLLEGE COMPOSITION",
+      "faculty": "Tumminia, Andrew",
+      "seats_open": 7,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 391",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-105-02": {
+      "course": "ENG 105",
+      "section": "02",
+      "display_code": "ENG-105-02",
+      "title": "COLLEGE COMPOSITION",
+      "faculty": "Tumminia, Andrew",
+      "seats_open": 8,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 391",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-105-03": {
+      "course": "ENG 105",
+      "section": "03",
+      "display_code": "ENG-105-03",
+      "title": "COLLEGE COMPOSITION",
+      "faculty": "Tumminia, Andrew",
+      "seats_open": 2,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "11:15 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 391",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-121-01": {
+      "course": "ENG 121",
+      "section": "01",
+      "display_code": "ENG-121-01",
+      "title": "COMPOSITION I",
+      "faculty": "Troyke, Anthony L.",
+      "seats_open": 10,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "8:15-9:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 390",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-121-02": {
+      "course": "ENG 121",
+      "section": "02",
+      "display_code": "ENG-121-02",
+      "title": "COMPOSITION I",
+      "faculty": "Troyke, Anthony L.",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 390",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-121-03": {
+      "course": "ENG 121",
+      "section": "03",
+      "display_code": "ENG-121-03",
+      "title": "COMPOSITION I",
+      "faculty": "Arbour, Robert",
+      "seats_open": 3,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "9:25-10:40 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 391",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-121-04": {
+      "course": "ENG 121",
+      "section": "04",
+      "display_code": "ENG-121-04",
+      "title": "COMPOSITION I",
+      "faculty": "Arbour, Robert",
+      "seats_open": 5,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "8:00-9:15 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 391",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-121-05": {
+      "course": "ENG 121",
+      "section": "05",
+      "display_code": "ENG-121-05",
+      "title": "COMPOSITION I",
+      "faculty": "Gervase, Matthew",
+      "seats_open": 4,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "1:45-3:00 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 326",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-123-01": {
+      "course": "ENG 123",
+      "section": "01",
+      "display_code": "ENG-123-01",
+      "title": "COMPOSITION II",
+      "faculty": "Swender, Cathy",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full",
+      "days": "Tue, Thu",
+      "time": "10:50 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 390",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ENG-123-02": {
+      "course": "ENG 123",
+      "section": "02",
+      "display_code": "ENG-123-02",
+      "title": "COMPOSITION II",
+      "faculty": "Swender, Cathy",
+      "seats_open": 9,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "1:45-3:00 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 390",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "FRE-101-01": {
+      "course": "FRE 101",
+      "section": "01",
+      "display_code": "FRE-101-01",
+      "title": "ELEMENTARY FRENCH I",
+      "faculty": "Gervase, Matthew",
+      "seats_open": 13,
+      "capacity": 21,
+      "status": "Open",
+      "days": "Mon, Wed",
+      "time": "1:45-3:00 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 227",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
     "HIS-213-01": {
       "course": "HIS 213",
       "section": "01",
@@ -422,6 +631,63 @@
       "end_date": "2026-12-11",
       "modality": "Online",
       "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ITA-101-01": {
+      "course": "ITA 101",
+      "section": "01",
+      "display_code": "ITA-101-01",
+      "title": "ELEMENTARY ITALIAN I",
+      "faculty": "Gervase, Matthew",
+      "seats_open": 12,
+      "capacity": 21,
+      "status": "Open",
+      "days": "Wed, Fri",
+      "time": "12:15-1:30 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 227",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ITA-101-92": {
+      "course": "ITA 101",
+      "section": "92",
+      "display_code": "ITA-101-92",
+      "title": "ELEMENTARY ITALIAN I",
+      "faculty": "Champlin-Liguori, Julie E.; Marulo, Claudia",
+      "seats_open": 15,
+      "capacity": 35,
+      "status": "Open",
+      "days": "",
+      "time": null,
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "Study Abroad",
+      "location": "Italy Center Italy Campus",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "ITA-102-92": {
+      "course": "ITA 102",
+      "section": "92",
+      "display_code": "ITA-102-92",
+      "title": "ELEMENTARY ITALIAN II",
+      "faculty": "Champlin-Liguori, Julie E.; Marulo, Claudia",
+      "seats_open": 7,
+      "capacity": 10,
+      "status": "Open",
+      "days": "",
+      "time": null,
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "Study Abroad",
+      "location": "Italy Center Italy Campus",
       "credits": 3.0,
       "availability_source": "section-level screenshot",
       "availability_exact": true
@@ -958,6 +1224,82 @@
       "availability_source": "section-level screenshot",
       "availability_exact": true
     },
+    "SPA-101-01": {
+      "course": "SPA 101",
+      "section": "01",
+      "display_code": "SPA-101-01",
+      "title": "ELEMENTARY SPANISH I",
+      "faculty": "Balmori, Fabian",
+      "seats_open": 1,
+      "capacity": 21,
+      "status": "Open",
+      "days": "Tue",
+      "time": "6:00-8:45 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "Online",
+      "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "SPA-107-01": {
+      "course": "SPA 107",
+      "section": "01",
+      "display_code": "SPA-107-01",
+      "title": "SPAN FOR MEDICAL PERSONNEL I",
+      "faculty": "Balmori, Fabian",
+      "seats_open": 1,
+      "capacity": 21,
+      "status": "Open",
+      "days": "",
+      "time": null,
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "Online",
+      "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "SPA-201-01": {
+      "course": "SPA 201",
+      "section": "01",
+      "display_code": "SPA-201-01",
+      "title": "INTERMED SPANISH I",
+      "faculty": "Balmori, Fabian",
+      "seats_open": 14,
+      "capacity": 21,
+      "status": "Open",
+      "days": "Wed",
+      "time": "6:00-8:45 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "Online",
+      "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "SPA-202-01": {
+      "course": "SPA 202",
+      "section": "01",
+      "display_code": "SPA-202-01",
+      "title": "INTERMED SPANISH II",
+      "faculty": "Balmori, Fabian",
+      "seats_open": 0,
+      "capacity": 3,
+      "status": "Full",
+      "days": "Wed",
+      "time": "6:00-8:45 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "Online",
+      "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
     "THL-101-01": {
       "course": "THL 101",
       "section": "01",
@@ -1162,6 +1504,83 @@
       "capacity": 30,
       "status": "Open"
     },
+    "ENG-105-01": {
+      "course": "ENG 105",
+      "section": "01",
+      "seats_open": 7,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "ENG-105-02": {
+      "course": "ENG 105",
+      "section": "02",
+      "seats_open": 8,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "ENG-105-03": {
+      "course": "ENG 105",
+      "section": "03",
+      "seats_open": 2,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "ENG-121-01": {
+      "course": "ENG 121",
+      "section": "01",
+      "seats_open": 10,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "ENG-121-02": {
+      "course": "ENG 121",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full"
+    },
+    "ENG-121-03": {
+      "course": "ENG 121",
+      "section": "03",
+      "seats_open": 3,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "ENG-121-04": {
+      "course": "ENG 121",
+      "section": "04",
+      "seats_open": 5,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "ENG-121-05": {
+      "course": "ENG 121",
+      "section": "05",
+      "seats_open": 4,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "ENG-123-01": {
+      "course": "ENG 123",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full"
+    },
+    "ENG-123-02": {
+      "course": "ENG 123",
+      "section": "02",
+      "seats_open": 9,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "FRE-101-01": {
+      "course": "FRE 101",
+      "section": "01",
+      "seats_open": 13,
+      "capacity": 21,
+      "status": "Open"
+    },
     "HIS-213-01": {
       "course": "HIS 213",
       "section": "01",
@@ -1188,6 +1607,27 @@
       "section": "51",
       "seats_open": 16,
       "capacity": 20,
+      "status": "Open"
+    },
+    "ITA-101-01": {
+      "course": "ITA 101",
+      "section": "01",
+      "seats_open": 12,
+      "capacity": 21,
+      "status": "Open"
+    },
+    "ITA-101-92": {
+      "course": "ITA 101",
+      "section": "92",
+      "seats_open": 15,
+      "capacity": 35,
+      "status": "Open"
+    },
+    "ITA-102-92": {
+      "course": "ITA 102",
+      "section": "92",
+      "seats_open": 7,
+      "capacity": 10,
       "status": "Open"
     },
     "MTH-100-01": {
@@ -1386,6 +1826,34 @@
       "capacity": 30,
       "status": "Open"
     },
+    "SPA-101-01": {
+      "course": "SPA 101",
+      "section": "01",
+      "seats_open": 1,
+      "capacity": 21,
+      "status": "Open"
+    },
+    "SPA-107-01": {
+      "course": "SPA 107",
+      "section": "01",
+      "seats_open": 1,
+      "capacity": 21,
+      "status": "Open"
+    },
+    "SPA-201-01": {
+      "course": "SPA 201",
+      "section": "01",
+      "seats_open": 14,
+      "capacity": 21,
+      "status": "Open"
+    },
+    "SPA-202-01": {
+      "course": "SPA 202",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 3,
+      "status": "Full"
+    },
     "THL-101-01": {
       "course": "THL 101",
       "section": "01",
@@ -1479,8 +1947,7 @@
     "BIO 101": {
       "categories": [
         "Major-specific freshman courses",
-        "Pre-Health and Nursing",
-        "Biology"
+        "Pre-Health and Nursing"
       ],
       "placement_required": false,
       "notes": "Section 01 is full; section 02 is open.",
@@ -1552,11 +2019,10 @@
     "CHM 111": {
       "categories": [
         "Major-specific freshman courses",
-        "Pre-Health and Nursing",
-        "Chemistry"
+        "Pre-Health and Nursing"
       ],
       "placement_required": false,
-      "notes": "General Chemistry I is full in this snapshot.",
+      "notes": "Full at 40.",
       "section_ids": [
         "CHM-111-01"
       ],
@@ -1653,10 +2119,14 @@
       ],
       "placement_required": true,
       "notes": "",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section"
+      "section_ids": [
+        "ENG-105-01",
+        "ENG-105-02",
+        "ENG-105-03"
+      ],
+      "section_availability_available": true,
+      "seats_available": 17,
+      "seats_available_basis": "sum_of_section_records"
     },
     "ENG 121": {
       "categories": [
@@ -1664,10 +2134,16 @@
       ],
       "placement_required": true,
       "notes": "",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section"
+      "section_ids": [
+        "ENG-121-01",
+        "ENG-121-02",
+        "ENG-121-03",
+        "ENG-121-04",
+        "ENG-121-05"
+      ],
+      "section_availability_available": true,
+      "seats_available": 22,
+      "seats_available_basis": "sum_of_section_records"
     },
     "ENG 123": {
       "categories": [
@@ -1675,10 +2151,13 @@
       ],
       "placement_required": true,
       "notes": "",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section"
+      "section_ids": [
+        "ENG-123-01",
+        "ENG-123-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 9,
+      "seats_available_basis": "sum_of_section_records"
     },
     "EXS 200": {
       "categories": [
@@ -1698,10 +2177,12 @@
       ],
       "placement_required": true,
       "notes": "",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section"
+      "section_ids": [
+        "FRE-101-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 13,
+      "seats_available_basis": "sum_of_section_records"
     },
     "HIS 213": {
       "categories": [
@@ -1749,10 +2230,26 @@
       ],
       "placement_required": true,
       "notes": "",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section"
+      "section_ids": [
+        "ITA-101-01",
+        "ITA-101-92"
+      ],
+      "section_availability_available": true,
+      "seats_available": 27,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "ITA 102": {
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "ITA-102-92"
+      ],
+      "section_availability_available": true,
+      "seats_available": 7,
+      "seats_available_basis": "sum_of_section_records"
     },
     "MTH 100": {
       "categories": [
@@ -1793,14 +2290,14 @@
       "section_availability_available": true,
       "seats_available": 0,
       "seats_available_basis": "sum_of_section_records",
-      "source_label": "MTH 103 Contemporary Mathematics"
+      "source_label": "MTH 103 Contemp Math"
     },
     "MTH 111": {
       "categories": [
         "Math"
       ],
       "placement_required": true,
-      "notes": "",
+      "notes": "Full at 35.",
       "section_ids": [
         "MTH-111-01"
       ],
@@ -1836,7 +2333,7 @@
       "section_availability_available": true,
       "seats_available": 11,
       "seats_available_basis": "sum_of_section_records",
-      "source_label": "MTH 163 Basic Statistics for Sciences"
+      "source_label": "MTH 163 Statistics"
     },
     "NUR 100": {
       "categories": [
@@ -1855,7 +2352,7 @@
         "Core"
       ],
       "placement_required": false,
-      "notes": "Section 51 is online and ends 10/08/2026.",
+      "notes": "Source note: sections full at 30 each.",
       "section_ids": [
         "PHL-101-01",
         "PHL-101-02",
@@ -1977,10 +2474,12 @@
       ],
       "placement_required": true,
       "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available.",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section",
+      "section_ids": [
+        "SPA-101-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 1,
+      "seats_available_basis": "sum_of_section_records",
       "source_group": "SPA 101 and SPA 107"
     },
     "SPA 107": {
@@ -1989,11 +2488,39 @@
       ],
       "placement_required": true,
       "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available.",
-      "section_ids": [],
-      "section_availability_available": false,
-      "seats_available": null,
-      "seats_available_basis": "not_available_by_section",
+      "section_ids": [
+        "SPA-107-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 1,
+      "seats_available_basis": "sum_of_section_records",
       "source_group": "SPA 101 and SPA 107"
+    },
+    "SPA 201": {
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "SPA-201-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 14,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "SPA 202": {
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "SPA-202-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 0,
+      "seats_available_basis": "sum_of_section_records"
     },
     "THL 101": {
       "categories": [
@@ -2057,44 +2584,16 @@
       "seats_open_course_total": 6,
       "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
     },
-    "ENG 105": {
-      "seats_open_course_total": 15,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
-    "ENG 121": {
-      "seats_open_course_total": 24,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
-    "ENG 123": {
-      "seats_open_course_total": 9,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
     "EXS 200": {
       "seats_open_course_total": 9,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
-    "FRE 101": {
-      "seats_open_course_total": 12,
       "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
     },
     "HSC 231": {
       "seats_open_course_total": 13,
       "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
     },
-    "ITA 101": {
-      "seats_open_course_total": 11,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
     "NUR 100": {
       "seats_open_course_total": 22,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
-    "SPA 101": {
-      "seats_open_course_total": 0,
-      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
-    },
-    "SPA 107": {
-      "seats_open_course_total": 0,
       "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
     },
     "THR 250": {
