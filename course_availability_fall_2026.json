@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "term": "Fall 2026",
+  "last_updated": "2026-08-05",
+  "live_data": false,
+  "update_note": "Manual seat-availability snapshot. Update this file when a newer course-availability report is available.",
+  "courses": {
+    "ENG 105": {
+      "seats_available": 15,
+      "categories": [
+        "English"
+      ],
+      "placement_required": true,
+      "notes": ""
+    },
+    "ENG 121": {
+      "seats_available": 24,
+      "categories": [
+        "English"
+      ],
+      "placement_required": true,
+      "notes": ""
+    },
+    "ENG 123": {
+      "seats_available": 9,
+      "categories": [
+        "English"
+      ],
+      "placement_required": true,
+      "notes": ""
+    },
+    "PHL 101": {
+      "seats_available": 1,
+      "categories": [
+        "Core"
+      ],
+      "placement_required": false,
+      "notes": "Source note: sections full at 30 each."
+    },
+    "THL 101": {
+      "seats_available": 36,
+      "categories": [
+        "Core"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "MTH 100": {
+      "seats_available": 16,
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "source_label": "MTH 100 Algebra",
+      "notes": ""
+    },
+    "MTH 103": {
+      "seats_available": 0,
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "source_label": "MTH 103 Contemp Math",
+      "notes": ""
+    },
+    "MTH 111": {
+      "seats_available": 0,
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "source_label": "MTH 111 Pre-Calculus",
+      "notes": "Full at 35."
+    },
+    "MTH 121": {
+      "seats_available": 8,
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "source_label": "MTH 121 Calculus I",
+      "notes": ""
+    },
+    "MTH 163": {
+      "seats_available": 11,
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "source_label": "MTH 163 Statistics",
+      "notes": ""
+    },
+    "SPA 101": {
+      "seats_available": 0,
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "source_group": "SPA 101 and SPA 107",
+      "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available."
+    },
+    "SPA 107": {
+      "seats_available": 0,
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "source_group": "SPA 101 and SPA 107",
+      "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available."
+    },
+    "FRE 101": {
+      "seats_available": 12,
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": ""
+    },
+    "ITA 101": {
+      "seats_available": 11,
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": ""
+    },
+    "HIS 213": {
+      "seats_available": 7,
+      "categories": [
+        "American HIS/POL"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "POL 112": {
+      "seats_available": 14,
+      "categories": [
+        "American HIS/POL",
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "POL 151": {
+      "seats_available": 10,
+      "categories": [
+        "Global HIS/POL",
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "BIO 120": {
+      "seats_available": 4,
+      "categories": [
+        "Core Science"
+      ],
+      "placement_required": false,
+      "notes": "Core Science for nonmajors."
+    },
+    "BIO 125": {
+      "seats_available": 11,
+      "categories": [
+        "Core Science"
+      ],
+      "placement_required": false,
+      "notes": "Core Science for nonmajors."
+    },
+    "PHY 115": {
+      "seats_available": 14,
+      "categories": [
+        "Core Science"
+      ],
+      "placement_required": false,
+      "notes": "Core Science for nonmajors."
+    },
+    "ECO 101": {
+      "seats_available": 7,
+      "categories": [
+        "Social Science",
+        "Business"
+      ],
+      "placement_required": false,
+      "notes": "Business category refers to ECO 101 availability."
+    },
+    "PSY 101": {
+      "seats_available": 5,
+      "categories": [
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "SOC 101": {
+      "seats_available": 16,
+      "categories": [
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "ARH 100": {
+      "seats_available": 8,
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "source_label": "ARH 100 Appreciation",
+      "notes": ""
+    },
+    "ART 101": {
+      "seats_available": 15,
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "source_label": "ART 101 Fundamentals",
+      "notes": ""
+    },
+    "ART 102": {
+      "seats_available": 12,
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "source_label": "ART 102 Drawing",
+      "notes": ""
+    },
+    "ART 103": {
+      "seats_available": 3,
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "source_label": "ART 103 Ceramics",
+      "notes": ""
+    },
+    "ART 254": {
+      "seats_available": 0,
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "source_label": "ART 254 Photography",
+      "notes": ""
+    },
+    "THR 250": {
+      "seats_available": 5,
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "source_label": "THR 250 Acting",
+      "notes": ""
+    },
+    "BIO 101": {
+      "seats_available": 23,
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "CHM 111": {
+      "seats_available": 0,
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing"
+      ],
+      "placement_required": false,
+      "notes": "Full at 40."
+    },
+    "HSC 231": {
+      "seats_available": 13,
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "NUR 100": {
+      "seats_available": 22,
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "CSC 100": {
+      "seats_available": 17,
+      "categories": [
+        "Major-specific freshman courses",
+        "Computer Science"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "EDU 131": {
+      "seats_available": 6,
+      "categories": [
+        "Major-specific freshman courses",
+        "Education"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "EXS 200": {
+      "seats_available": 9,
+      "categories": [
+        "Major-specific freshman courses",
+        "Exercise Science"
+      ],
+      "placement_required": false,
+      "notes": ""
+    },
+    "CMM 234": {
+      "seats_available": 17,
+      "categories": [
+        "Other good freshman courses"
+      ],
+      "placement_required": false,
+      "source_label": "CMM 234 Media Literacy",
+      "notes": ""
+    }
+  }
+}
