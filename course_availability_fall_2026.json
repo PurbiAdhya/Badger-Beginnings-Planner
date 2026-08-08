@@ -1,329 +1,2105 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "term": "Fall 2026",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-08",
   "live_data": false,
-  "update_note": "Manual seat-availability snapshot. Update this file when a newer course-availability report is available.",
+  "availability_granularity": "section",
+  "section_records_are_authoritative": true,
+  "section_data_available": true,
+  "update_note": "Manual section-level availability snapshot. Use the top-level `sections` records, or the compatibility `section_index`, for all section-specific availability decisions. Values under `course_level_only_availability` come from an older aggregate report and must not be assigned to a specific section.",
+  "sections": {
+    "BIO-101-01": {
+      "course": "BIO 101",
+      "section": "01",
+      "display_code": "BIO-101-01",
+      "title": "PRINCIPLES OF BIOLOGY",
+      "faculty": "Culberson, Don E.",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full",
+      "days": "Tue, Thu",
+      "time": "9:25-10:40 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 108",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-101-02": {
+      "course": "BIO 101",
+      "section": "02",
+      "display_code": "BIO-101-02",
+      "title": "PRINCIPLES OF BIOLOGY",
+      "faculty": "Kohnen, Paul D.",
+      "seats_open": 23,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 108",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-103-01": {
+      "course": "BIO 103",
+      "section": "01",
+      "display_code": "BIO-103-01",
+      "title": "PRINCIPLES OF BIOLOGY LAB",
+      "faculty": "Kohnen, Paul D.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "1:15-3:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 117",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-103-02": {
+      "course": "BIO 103",
+      "section": "02",
+      "display_code": "BIO-103-02",
+      "title": "PRINCIPLES OF BIOLOGY LAB",
+      "faculty": "Kohnen, Paul D.",
+      "seats_open": 9,
+      "capacity": 15,
+      "status": "Open",
+      "days": "Mon",
+      "time": "3:15-5:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 117",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-103-03": {
+      "course": "BIO 103",
+      "section": "03",
+      "display_code": "BIO-103-03",
+      "title": "PRINCIPLES OF BIOLOGY LAB",
+      "faculty": "Kohnen, Paul D.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Tue",
+      "time": "1:15-3:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 117",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-103-04": {
+      "course": "BIO 103",
+      "section": "04",
+      "display_code": "BIO-103-04",
+      "title": "PRINCIPLES OF BIOLOGY LAB",
+      "faculty": "Kohnen, Paul D.",
+      "seats_open": 12,
+      "capacity": 15,
+      "status": "Open",
+      "days": "Tue",
+      "time": "3:15-5:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 117",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-120-01": {
+      "course": "BIO 120",
+      "section": "01",
+      "display_code": "BIO-120-01",
+      "title": "FARMS TO PHARMACEUTICALS",
+      "faculty": "Kohnen, Paul D.",
+      "seats_open": 3,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 117",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-125-01": {
+      "course": "BIO 125",
+      "section": "01",
+      "display_code": "BIO-125-01",
+      "title": "PANDEMICS",
+      "faculty": "Fox, Debbie F.",
+      "seats_open": 11,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "10:50 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 108",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "BIO-140-01": {
+      "course": "BIO 140",
+      "section": "01",
+      "display_code": "BIO-140-01",
+      "title": "STEM COMMUNITY SERVICE SEMINAR",
+      "faculty": "Fox, Debbie F.",
+      "seats_open": 9,
+      "capacity": 12,
+      "status": "Open",
+      "days": "Tue",
+      "time": "1:15-3:00 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 108",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-111-01": {
+      "course": "CHM 111",
+      "section": "01",
+      "display_code": "CHM-111-01",
+      "title": "GENERAL CHEMISTRY I",
+      "faculty": "SHC, Staff",
+      "seats_open": 0,
+      "capacity": 40,
+      "status": "Full",
+      "days": "Mon, Wed, Fri",
+      "time": "11:15 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 103",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-113-01": {
+      "course": "CHM 113",
+      "section": "01",
+      "display_code": "CHM-113-01",
+      "title": "GENERAL CHEMISTRY I LAB",
+      "faculty": "Owens, Jessica",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full",
+      "days": "Tue",
+      "time": "1:45-4:45 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 101",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-113-02": {
+      "course": "CHM 113",
+      "section": "02",
+      "display_code": "CHM-113-02",
+      "title": "GENERAL CHEMISTRY I LAB",
+      "faculty": "Owens, Jessica",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full",
+      "days": "Thu",
+      "time": "1:45-4:45 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 101",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-115-01": {
+      "course": "CHM 115",
+      "section": "01",
+      "display_code": "CHM-115-01",
+      "title": "GENERAL CHEMISTRY I RECITATION",
+      "faculty": "Santiago-Mora, Priscila D.",
+      "seats_open": 0,
+      "capacity": 16,
+      "status": "Full",
+      "days": "Mon",
+      "time": "1:45-2:35 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 101",
+      "credits": 0.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-115-02": {
+      "course": "CHM 115",
+      "section": "02",
+      "display_code": "CHM-115-02",
+      "title": "GENERAL CHEMISTRY I RECITATION",
+      "faculty": "Santiago-Mora, Priscila D.",
+      "seats_open": 10,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon",
+      "time": "2:45-3:35 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 101",
+      "credits": 0.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-115-03": {
+      "course": "CHM 115",
+      "section": "03",
+      "display_code": "CHM-115-03",
+      "title": "GENERAL CHEMISTRY I RECITATION",
+      "faculty": "Santiago-Mora, Priscila D.",
+      "seats_open": 8,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon",
+      "time": "3:45-4:35 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 101",
+      "credits": 0.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-115-04": {
+      "course": "CHM 115",
+      "section": "04",
+      "display_code": "CHM-115-04",
+      "title": "GENERAL CHEMISTRY I RECITATION",
+      "faculty": "Santiago-Mora, Priscila D.",
+      "seats_open": 12,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon",
+      "time": "4:45-5:35 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry - 101",
+      "credits": 0.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CHM-115-05": {
+      "course": "CHM 115",
+      "section": "05",
+      "display_code": "CHM-115-05",
+      "title": "GENERAL CHEMISTRY I RECITATION",
+      "faculty": "Santiago-Mora, Priscila D.",
+      "seats_open": 12,
+      "capacity": 16,
+      "status": "Open",
+      "days": "Mon",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Deignan Hall / Chemistry",
+      "credits": 0.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "CSC-100-01": {
+      "course": "CSC 100",
+      "section": "01",
+      "display_code": "CSC-100-01",
+      "title": "COMPUTER SCIENCE: FOUNDATIONS",
+      "faculty": "Adhya, Purbi",
+      "seats_open": 17,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Mon, Tue, Thu, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 031",
+      "credits": 4.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "HIS-213-01": {
+      "course": "HIS 213",
+      "section": "01",
+      "display_code": "HIS-213-01",
+      "title": "AMERICA TO 1876",
+      "faculty": "Wood, Nicholas P.",
+      "seats_open": 5,
+      "capacity": 25,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 227",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "HIS-213-02": {
+      "course": "HIS 213",
+      "section": "02",
+      "display_code": "HIS-213-02",
+      "title": "AMERICA TO 1876",
+      "faculty": "Wood, Nicholas P.",
+      "seats_open": 0,
+      "capacity": 25,
+      "status": "Full",
+      "days": "Mon, Wed, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 227",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "HIS-213-03": {
+      "course": "HIS 213",
+      "section": "03",
+      "display_code": "HIS-213-03",
+      "title": "AMERICA TO 1876",
+      "faculty": "Wood, Nicholas P.",
+      "seats_open": 0,
+      "capacity": 25,
+      "status": "Full",
+      "days": "Mon, Wed, Fri",
+      "time": "11:15 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 227",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "HIS-214-51": {
+      "course": "HIS 214",
+      "section": "51",
+      "display_code": "HIS-214-51",
+      "title": "THE UNITED STATES SINCE 1876",
+      "faculty": "Theodore, Philip A.",
+      "seats_open": 16,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Online",
+      "time": null,
+      "start_date": "2026-10-19",
+      "end_date": "2026-12-11",
+      "modality": "Online",
+      "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-100-01": {
+      "course": "MTH 100",
+      "section": "01",
+      "display_code": "MTH-100-01",
+      "title": "INTERMEDIATE ALGEBRA",
+      "faculty": "Quintana, Pamela",
+      "seats_open": 16,
+      "capacity": 25,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 030",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-101-01": {
+      "course": "MTH 101",
+      "section": "01",
+      "display_code": "MTH-101-01",
+      "title": "INTERMEDIATE ALGEBRA RECITATION",
+      "faculty": "Quintana, Pamela",
+      "seats_open": 15,
+      "capacity": 25,
+      "status": "Open",
+      "days": "Wed",
+      "time": "3:30-4:20 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 123",
+      "credits": 0.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-103-01": {
+      "course": "MTH 103",
+      "section": "01",
+      "display_code": "MTH-103-01",
+      "title": "CONTEMPORARY MATHEMATICS",
+      "faculty": "Rossillion, Andrea",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full",
+      "days": "Mon, Wed, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 116",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-111-01": {
+      "course": "MTH 111",
+      "section": "01",
+      "display_code": "MTH-111-01",
+      "title": "PRE-CALCULUS",
+      "faculty": "Rossillion, Andrea",
+      "seats_open": 1,
+      "capacity": 35,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 116",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-121-01": {
+      "course": "MTH 121",
+      "section": "01",
+      "display_code": "MTH-121-01",
+      "title": "CALCULUS I",
+      "faculty": "Barnes, Matthew C.",
+      "seats_open": 2,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Mon, Tue, Thu, Fri",
+      "time": "8:15-9:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 103",
+      "credits": 4.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-163-01": {
+      "course": "MTH 163",
+      "section": "01",
+      "display_code": "MTH-163-01",
+      "title": "BASIC STATISTICS FOR SCIENCES",
+      "faculty": "Barnes, Matthew C.",
+      "seats_open": 6,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "9:25-10:50 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 030",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "MTH-163-02": {
+      "course": "MTH 163",
+      "section": "02",
+      "display_code": "MTH-163-02",
+      "title": "BASIC STATISTICS FOR SCIENCES",
+      "faculty": "Barnes, Matthew C.",
+      "seats_open": 5,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "10:50 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 030",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PHL-101-01": {
+      "course": "PHL 101",
+      "section": "01",
+      "display_code": "PHL-101-01",
+      "title": "INTRODUCTORY LOGIC",
+      "faculty": "DiFate, Victor J.",
+      "seats_open": 1,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "9:25-10:40 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 326",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PHL-101-02": {
+      "course": "PHL 101",
+      "section": "02",
+      "display_code": "PHL-101-02",
+      "title": "INTRODUCTORY LOGIC",
+      "faculty": "DiFate, Victor J.",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full",
+      "days": "Tue, Thu",
+      "time": "10:50 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 326",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PHL-101-03": {
+      "course": "PHL 101",
+      "section": "03",
+      "display_code": "PHL-101-03",
+      "title": "INTRODUCTORY LOGIC",
+      "faculty": "Dodsworth, Chris R.",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full",
+      "days": "Mon, Wed, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 326",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PHL-101-51": {
+      "course": "PHL 101",
+      "section": "51",
+      "display_code": "PHL-101-51",
+      "title": "INTRODUCTORY LOGIC",
+      "faculty": "DiFate, Victor J.",
+      "seats_open": 12,
+      "capacity": 15,
+      "status": "Open",
+      "days": "Online",
+      "time": null,
+      "start_date": "2026-08-24",
+      "end_date": "2026-10-08",
+      "modality": "Online",
+      "location": "ONLINE - OLC",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PHY-115-01": {
+      "course": "PHY 115",
+      "section": "01",
+      "display_code": "PHY-115-01",
+      "title": "INTRODUCTION TO ASTRONOMY",
+      "faculty": "Quintana, Pamela",
+      "seats_open": 14,
+      "capacity": 25,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "11:15 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 030",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "POL-112-02": {
+      "course": "POL 112",
+      "section": "02",
+      "display_code": "POL-112-02",
+      "title": "INTRO TO AMERICAN POLITICS",
+      "faculty": "Hoffman, Thomas J.",
+      "seats_open": 14,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "11:15 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 301",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "POL-151-01": {
+      "course": "POL 151",
+      "section": "01",
+      "display_code": "POL-151-01",
+      "title": "INTRO TO COMPARATIVE POLITICS",
+      "faculty": "Kravtsov, Vladislav",
+      "seats_open": 9,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "9:25-10:40 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 229",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PSY-101-01": {
+      "course": "PSY 101",
+      "section": "01",
+      "display_code": "PSY-101-01",
+      "title": "INTRO TO PSYCHOLOGY",
+      "faculty": "Brasfield, Mikenzi B.",
+      "seats_open": 5,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "10:15-11:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 225",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PSY-101-02": {
+      "course": "PSY 101",
+      "section": "02",
+      "display_code": "PSY-101-02",
+      "title": "INTRO TO PSYCHOLOGY",
+      "faculty": "Lucia, Jonathan",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full",
+      "days": "Tue, Thu",
+      "time": "10:50 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 301",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PSY-150-01": {
+      "course": "PSY 150",
+      "section": "01",
+      "display_code": "PSY-150-01",
+      "title": "CAREERS IN PSYCHOLOGY",
+      "faculty": "Ludwikowski, Wyndolyn",
+      "seats_open": 6,
+      "capacity": 20,
+      "status": "Open",
+      "days": "Mon",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 029",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-01": {
+      "course": "PTH 101",
+      "section": "01",
+      "display_code": "PTH-101-01",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Barnes, Matthew C.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 103",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-02": {
+      "course": "PTH 101",
+      "section": "02",
+      "display_code": "PTH-101-02",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Culberson, Don E.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yancey Hall / Biology - 108",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-03": {
+      "course": "PTH 101",
+      "section": "03",
+      "display_code": "PTH-101-03",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "D'Amato, Natalie A.",
+      "seats_open": 4,
+      "capacity": 15,
+      "status": "Open",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 116",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-04": {
+      "course": "PTH 101",
+      "section": "04",
+      "display_code": "PTH-101-04",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "DiFate, Victor J.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 325",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-05": {
+      "course": "PTH 101",
+      "section": "05",
+      "display_code": "PTH-101-05",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Dodsworth, Chris R.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 326",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-06": {
+      "course": "PTH 101",
+      "section": "06",
+      "display_code": "PTH-101-06",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Kravtsov, Vladislav",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 301",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-07": {
+      "course": "PTH 101",
+      "section": "07",
+      "display_code": "PTH-101-07",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Ludwikowski, Wyndolyn",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 325",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-08": {
+      "course": "PTH 101",
+      "section": "08",
+      "display_code": "PTH-101-08",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Noble, Ryan R.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Marnie and John Burke Library - 030",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "PTH-101-09": {
+      "course": "PTH 101",
+      "section": "09",
+      "display_code": "PTH-101-09",
+      "title": "COMMUNITY AND WELL-BEING",
+      "faculty": "Wellborn, Stacy E.",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full",
+      "days": "Mon",
+      "time": "12:15-1:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Yenni Hall - 206",
+      "credits": 1.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "SOC-101-01": {
+      "course": "SOC 101",
+      "section": "01",
+      "display_code": "SOC-101-01",
+      "title": "INTRO TO SOCIOLOGY",
+      "faculty": "Dorton, Harold",
+      "seats_open": 14,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "8:15-9:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 301",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "SOC-101-02": {
+      "course": "SOC 101",
+      "section": "02",
+      "display_code": "SOC-101-02",
+      "title": "INTRO TO SOCIOLOGY",
+      "faculty": "Dorton, Harold",
+      "seats_open": 2,
+      "capacity": 30,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Quinlan Hall - 301",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "THL-101-01": {
+      "course": "THL 101",
+      "section": "01",
+      "display_code": "THL-101-01",
+      "title": "INTRO TO CHRISTIAN THEOLOGY",
+      "faculty": "Gilmore, George B.",
+      "seats_open": 1,
+      "capacity": 35,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "9:15-10:05 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 326",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "THL-101-02": {
+      "course": "THL 101",
+      "section": "02",
+      "display_code": "THL-101-02",
+      "title": "INTRO TO CHRISTIAN THEOLOGY",
+      "faculty": "Viscardi S.J., Chris",
+      "seats_open": 0,
+      "capacity": 35,
+      "status": "Full",
+      "days": "Tue, Thu",
+      "time": "9:25-10:40 AM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 325",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "THL-101-03": {
+      "course": "THL 101",
+      "section": "03",
+      "display_code": "THL-101-03",
+      "title": "INTRO TO CHRISTIAN THEOLOGY",
+      "faculty": "Raftery, Elisabeth M.",
+      "seats_open": 1,
+      "capacity": 35,
+      "status": "Open",
+      "days": "Tue, Thu",
+      "time": "1:45-3:00 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 325",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    },
+    "THL-101-04": {
+      "course": "THL 101",
+      "section": "04",
+      "display_code": "THL-101-04",
+      "title": "INTRO TO CHRISTIAN THEOLOGY",
+      "faculty": "Gilmore, George B.",
+      "seats_open": 30,
+      "capacity": 35,
+      "status": "Open",
+      "days": "Mon, Wed, Fri",
+      "time": "11:15 AM-12:05 PM",
+      "start_date": "2026-08-24",
+      "end_date": "2026-12-11",
+      "modality": "In Person",
+      "location": "Gregory F. Lucey Administration Center - 325",
+      "credits": 3.0,
+      "availability_source": "section-level screenshot",
+      "availability_exact": true
+    }
+  },
+  "section_index": {
+    "BIO-101-01": {
+      "course": "BIO 101",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full"
+    },
+    "BIO-101-02": {
+      "course": "BIO 101",
+      "section": "02",
+      "seats_open": 23,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "BIO-103-01": {
+      "course": "BIO 103",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "BIO-103-02": {
+      "course": "BIO 103",
+      "section": "02",
+      "seats_open": 9,
+      "capacity": 15,
+      "status": "Open"
+    },
+    "BIO-103-03": {
+      "course": "BIO 103",
+      "section": "03",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "BIO-103-04": {
+      "course": "BIO 103",
+      "section": "04",
+      "seats_open": 12,
+      "capacity": 15,
+      "status": "Open"
+    },
+    "BIO-120-01": {
+      "course": "BIO 120",
+      "section": "01",
+      "seats_open": 3,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "BIO-125-01": {
+      "course": "BIO 125",
+      "section": "01",
+      "seats_open": 11,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "BIO-140-01": {
+      "course": "BIO 140",
+      "section": "01",
+      "seats_open": 9,
+      "capacity": 12,
+      "status": "Open"
+    },
+    "CHM-111-01": {
+      "course": "CHM 111",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 40,
+      "status": "Full"
+    },
+    "CHM-113-01": {
+      "course": "CHM 113",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full"
+    },
+    "CHM-113-02": {
+      "course": "CHM 113",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 20,
+      "status": "Full"
+    },
+    "CHM-115-01": {
+      "course": "CHM 115",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 16,
+      "status": "Full"
+    },
+    "CHM-115-02": {
+      "course": "CHM 115",
+      "section": "02",
+      "seats_open": 10,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "CHM-115-03": {
+      "course": "CHM 115",
+      "section": "03",
+      "seats_open": 8,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "CHM-115-04": {
+      "course": "CHM 115",
+      "section": "04",
+      "seats_open": 12,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "CHM-115-05": {
+      "course": "CHM 115",
+      "section": "05",
+      "seats_open": 12,
+      "capacity": 16,
+      "status": "Open"
+    },
+    "CSC-100-01": {
+      "course": "CSC 100",
+      "section": "01",
+      "seats_open": 17,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "HIS-213-01": {
+      "course": "HIS 213",
+      "section": "01",
+      "seats_open": 5,
+      "capacity": 25,
+      "status": "Open"
+    },
+    "HIS-213-02": {
+      "course": "HIS 213",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 25,
+      "status": "Full"
+    },
+    "HIS-213-03": {
+      "course": "HIS 213",
+      "section": "03",
+      "seats_open": 0,
+      "capacity": 25,
+      "status": "Full"
+    },
+    "HIS-214-51": {
+      "course": "HIS 214",
+      "section": "51",
+      "seats_open": 16,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "MTH-100-01": {
+      "course": "MTH 100",
+      "section": "01",
+      "seats_open": 16,
+      "capacity": 25,
+      "status": "Open"
+    },
+    "MTH-101-01": {
+      "course": "MTH 101",
+      "section": "01",
+      "seats_open": 15,
+      "capacity": 25,
+      "status": "Open"
+    },
+    "MTH-103-01": {
+      "course": "MTH 103",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full"
+    },
+    "MTH-111-01": {
+      "course": "MTH 111",
+      "section": "01",
+      "seats_open": 1,
+      "capacity": 35,
+      "status": "Open"
+    },
+    "MTH-121-01": {
+      "course": "MTH 121",
+      "section": "01",
+      "seats_open": 2,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "MTH-163-01": {
+      "course": "MTH 163",
+      "section": "01",
+      "seats_open": 6,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "MTH-163-02": {
+      "course": "MTH 163",
+      "section": "02",
+      "seats_open": 5,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "PHL-101-01": {
+      "course": "PHL 101",
+      "section": "01",
+      "seats_open": 1,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "PHL-101-02": {
+      "course": "PHL 101",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full"
+    },
+    "PHL-101-03": {
+      "course": "PHL 101",
+      "section": "03",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full"
+    },
+    "PHL-101-51": {
+      "course": "PHL 101",
+      "section": "51",
+      "seats_open": 12,
+      "capacity": 15,
+      "status": "Open"
+    },
+    "PHY-115-01": {
+      "course": "PHY 115",
+      "section": "01",
+      "seats_open": 14,
+      "capacity": 25,
+      "status": "Open"
+    },
+    "POL-112-02": {
+      "course": "POL 112",
+      "section": "02",
+      "seats_open": 14,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "POL-151-01": {
+      "course": "POL 151",
+      "section": "01",
+      "seats_open": 9,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "PSY-101-01": {
+      "course": "PSY 101",
+      "section": "01",
+      "seats_open": 5,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "PSY-101-02": {
+      "course": "PSY 101",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 30,
+      "status": "Full"
+    },
+    "PSY-150-01": {
+      "course": "PSY 150",
+      "section": "01",
+      "seats_open": 6,
+      "capacity": 20,
+      "status": "Open"
+    },
+    "PTH-101-01": {
+      "course": "PTH 101",
+      "section": "01",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-02": {
+      "course": "PTH 101",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-03": {
+      "course": "PTH 101",
+      "section": "03",
+      "seats_open": 4,
+      "capacity": 15,
+      "status": "Open"
+    },
+    "PTH-101-04": {
+      "course": "PTH 101",
+      "section": "04",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-05": {
+      "course": "PTH 101",
+      "section": "05",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-06": {
+      "course": "PTH 101",
+      "section": "06",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-07": {
+      "course": "PTH 101",
+      "section": "07",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-08": {
+      "course": "PTH 101",
+      "section": "08",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "PTH-101-09": {
+      "course": "PTH 101",
+      "section": "09",
+      "seats_open": 0,
+      "capacity": 15,
+      "status": "Full"
+    },
+    "SOC-101-01": {
+      "course": "SOC 101",
+      "section": "01",
+      "seats_open": 14,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "SOC-101-02": {
+      "course": "SOC 101",
+      "section": "02",
+      "seats_open": 2,
+      "capacity": 30,
+      "status": "Open"
+    },
+    "THL-101-01": {
+      "course": "THL 101",
+      "section": "01",
+      "seats_open": 1,
+      "capacity": 35,
+      "status": "Open"
+    },
+    "THL-101-02": {
+      "course": "THL 101",
+      "section": "02",
+      "seats_open": 0,
+      "capacity": 35,
+      "status": "Full"
+    },
+    "THL-101-03": {
+      "course": "THL 101",
+      "section": "03",
+      "seats_open": 1,
+      "capacity": 35,
+      "status": "Open"
+    },
+    "THL-101-04": {
+      "course": "THL 101",
+      "section": "04",
+      "seats_open": 30,
+      "capacity": 35,
+      "status": "Open"
+    }
+  },
   "courses": {
-    "ENG 105": {
-      "seats_available": 15,
-      "categories": [
-        "English"
-      ],
-      "placement_required": true,
-      "notes": ""
-    },
-    "ENG 121": {
-      "seats_available": 24,
-      "categories": [
-        "English"
-      ],
-      "placement_required": true,
-      "notes": ""
-    },
-    "ENG 123": {
-      "seats_available": 9,
-      "categories": [
-        "English"
-      ],
-      "placement_required": true,
-      "notes": ""
-    },
-    "PHL 101": {
-      "seats_available": 1,
-      "categories": [
-        "Core"
-      ],
-      "placement_required": false,
-      "notes": "Source note: sections full at 30 each."
-    },
-    "THL 101": {
-      "seats_available": 36,
-      "categories": [
-        "Core"
-      ],
-      "placement_required": false,
-      "notes": ""
-    },
-    "MTH 100": {
-      "seats_available": 16,
-      "categories": [
-        "Math"
-      ],
-      "placement_required": true,
-      "source_label": "MTH 100 Algebra",
-      "notes": ""
-    },
-    "MTH 103": {
-      "seats_available": 0,
-      "categories": [
-        "Math"
-      ],
-      "placement_required": true,
-      "source_label": "MTH 103 Contemp Math",
-      "notes": ""
-    },
-    "MTH 111": {
-      "seats_available": 0,
-      "categories": [
-        "Math"
-      ],
-      "placement_required": true,
-      "source_label": "MTH 111 Pre-Calculus",
-      "notes": "Full at 35."
-    },
-    "MTH 121": {
-      "seats_available": 8,
-      "categories": [
-        "Math"
-      ],
-      "placement_required": true,
-      "source_label": "MTH 121 Calculus I",
-      "notes": ""
-    },
-    "MTH 163": {
-      "seats_available": 11,
-      "categories": [
-        "Math"
-      ],
-      "placement_required": true,
-      "source_label": "MTH 163 Statistics",
-      "notes": ""
-    },
-    "SPA 101": {
-      "seats_available": 0,
-      "categories": [
-        "Language"
-      ],
-      "placement_required": true,
-      "source_group": "SPA 101 and SPA 107",
-      "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available."
-    },
-    "SPA 107": {
-      "seats_available": 0,
-      "categories": [
-        "Language"
-      ],
-      "placement_required": true,
-      "source_group": "SPA 101 and SPA 107",
-      "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available."
-    },
-    "FRE 101": {
-      "seats_available": 12,
-      "categories": [
-        "Language"
-      ],
-      "placement_required": true,
-      "notes": ""
-    },
-    "ITA 101": {
-      "seats_available": 11,
-      "categories": [
-        "Language"
-      ],
-      "placement_required": true,
-      "notes": ""
-    },
-    "HIS 213": {
-      "seats_available": 7,
-      "categories": [
-        "American HIS/POL"
-      ],
-      "placement_required": false,
-      "notes": ""
-    },
-    "POL 112": {
-      "seats_available": 14,
-      "categories": [
-        "American HIS/POL",
-        "Social Science"
-      ],
-      "placement_required": false,
-      "notes": ""
-    },
-    "POL 151": {
-      "seats_available": 10,
-      "categories": [
-        "Global HIS/POL",
-        "Social Science"
-      ],
-      "placement_required": false,
-      "notes": ""
-    },
-    "BIO 120": {
-      "seats_available": 4,
-      "categories": [
-        "Core Science"
-      ],
-      "placement_required": false,
-      "notes": "Core Science for nonmajors."
-    },
-    "BIO 125": {
-      "seats_available": 11,
-      "categories": [
-        "Core Science"
-      ],
-      "placement_required": false,
-      "notes": "Core Science for nonmajors."
-    },
-    "PHY 115": {
-      "seats_available": 14,
-      "categories": [
-        "Core Science"
-      ],
-      "placement_required": false,
-      "notes": "Core Science for nonmajors."
-    },
-    "ECO 101": {
-      "seats_available": 7,
-      "categories": [
-        "Social Science",
-        "Business"
-      ],
-      "placement_required": false,
-      "notes": "Business category refers to ECO 101 availability."
-    },
-    "PSY 101": {
-      "seats_available": 5,
-      "categories": [
-        "Social Science"
-      ],
-      "placement_required": false,
-      "notes": ""
-    },
-    "SOC 101": {
-      "seats_available": 16,
-      "categories": [
-        "Social Science"
-      ],
-      "placement_required": false,
-      "notes": ""
-    },
     "ARH 100": {
-      "seats_available": 8,
       "categories": [
         "Fine Arts"
       ],
       "placement_required": false,
-      "source_label": "ARH 100 Appreciation",
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "ARH 100 Appreciation"
     },
     "ART 101": {
-      "seats_available": 15,
       "categories": [
         "Fine Arts"
       ],
       "placement_required": false,
-      "source_label": "ART 101 Fundamentals",
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "ART 101 Fundamentals"
     },
     "ART 102": {
-      "seats_available": 12,
       "categories": [
         "Fine Arts"
       ],
       "placement_required": false,
-      "source_label": "ART 102 Drawing",
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "ART 102 Drawing"
     },
     "ART 103": {
-      "seats_available": 3,
       "categories": [
         "Fine Arts"
       ],
       "placement_required": false,
-      "source_label": "ART 103 Ceramics",
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "ART 103 Ceramics"
     },
     "ART 254": {
-      "seats_available": 0,
       "categories": [
         "Fine Arts"
       ],
       "placement_required": false,
-      "source_label": "ART 254 Photography",
-      "notes": ""
-    },
-    "THR 250": {
-      "seats_available": 5,
-      "categories": [
-        "Fine Arts"
-      ],
-      "placement_required": false,
-      "source_label": "THR 250 Acting",
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "ART 254 Photography"
     },
     "BIO 101": {
-      "seats_available": 23,
       "categories": [
         "Major-specific freshman courses",
-        "Pre-Health and Nursing"
+        "Pre-Health and Nursing",
+        "Biology"
       ],
       "placement_required": false,
-      "notes": ""
+      "notes": "Section 01 is full; section 02 is open.",
+      "section_ids": [
+        "BIO-101-01",
+        "BIO-101-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 23,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "BIO 103": {
+      "categories": [
+        "Major-specific freshman courses",
+        "Biology Lab"
+      ],
+      "placement_required": false,
+      "notes": "Principles of Biology laboratory sections.",
+      "section_ids": [
+        "BIO-103-01",
+        "BIO-103-02",
+        "BIO-103-03",
+        "BIO-103-04"
+      ],
+      "section_availability_available": true,
+      "seats_available": 21,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "BIO 120": {
+      "categories": [
+        "Core Science"
+      ],
+      "placement_required": false,
+      "notes": "Core Science for nonmajors.",
+      "section_ids": [
+        "BIO-120-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 3,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "BIO 125": {
+      "categories": [
+        "Core Science"
+      ],
+      "placement_required": false,
+      "notes": "Core Science for nonmajors.",
+      "section_ids": [
+        "BIO-125-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 11,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "BIO 140": {
+      "categories": [
+        "Other good freshman courses",
+        "Biology"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "BIO-140-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 9,
+      "seats_available_basis": "sum_of_section_records"
     },
     "CHM 111": {
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing",
+        "Chemistry"
+      ],
+      "placement_required": false,
+      "notes": "General Chemistry I is full in this snapshot.",
+      "section_ids": [
+        "CHM-111-01"
+      ],
+      "section_availability_available": true,
       "seats_available": 0,
-      "categories": [
-        "Major-specific freshman courses",
-        "Pre-Health and Nursing"
-      ],
-      "placement_required": false,
-      "notes": "Full at 40."
+      "seats_available_basis": "sum_of_section_records"
     },
-    "HSC 231": {
-      "seats_available": 13,
+    "CHM 113": {
       "categories": [
         "Major-specific freshman courses",
-        "Pre-Health and Nursing"
+        "Chemistry Lab"
       ],
       "placement_required": false,
-      "notes": ""
+      "notes": "Corequisite laboratory for CHM 111. Both listed lab sections are full.",
+      "section_ids": [
+        "CHM-113-01",
+        "CHM-113-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 0,
+      "seats_available_basis": "sum_of_section_records"
     },
-    "NUR 100": {
-      "seats_available": 22,
+    "CHM 115": {
       "categories": [
         "Major-specific freshman courses",
-        "Pre-Health and Nursing"
+        "Chemistry Recitation"
       ],
       "placement_required": false,
-      "notes": ""
+      "notes": "Corequisite recitation for CHM 111. Section 01 is full; sections 02-05 are open.",
+      "section_ids": [
+        "CHM-115-01",
+        "CHM-115-02",
+        "CHM-115-03",
+        "CHM-115-04",
+        "CHM-115-05"
+      ],
+      "section_availability_available": true,
+      "seats_available": 42,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "CMM 234": {
+      "categories": [
+        "Other good freshman courses"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "CMM 234 Media Literacy"
     },
     "CSC 100": {
-      "seats_available": 17,
       "categories": [
         "Major-specific freshman courses",
         "Computer Science"
       ],
       "placement_required": false,
-      "notes": ""
+      "notes": "",
+      "section_ids": [
+        "CSC-100-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 17,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "ECO 101": {
+      "categories": [
+        "Social Science",
+        "Business"
+      ],
+      "placement_required": false,
+      "notes": "Business category refers to ECO 101 availability.",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
     },
     "EDU 131": {
-      "seats_available": 6,
       "categories": [
         "Major-specific freshman courses",
         "Education"
       ],
       "placement_required": false,
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "ENG 105": {
+      "categories": [
+        "English"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "ENG 121": {
+      "categories": [
+        "English"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "ENG 123": {
+      "categories": [
+        "English"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
     },
     "EXS 200": {
-      "seats_available": 9,
       "categories": [
         "Major-specific freshman courses",
         "Exercise Science"
       ],
       "placement_required": false,
-      "notes": ""
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
     },
-    "CMM 234": {
-      "seats_available": 17,
+    "FRE 101": {
       "categories": [
-        "Other good freshman courses"
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "HIS 213": {
+      "categories": [
+        "American HIS/POL"
       ],
       "placement_required": false,
-      "source_label": "CMM 234 Media Literacy",
-      "notes": ""
+      "notes": "",
+      "section_ids": [
+        "HIS-213-01",
+        "HIS-213-02",
+        "HIS-213-03"
+      ],
+      "section_availability_available": true,
+      "seats_available": 5,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "HIS 214": {
+      "categories": [
+        "American HIS/POL"
+      ],
+      "placement_required": false,
+      "notes": "Online second-half term section.",
+      "section_ids": [
+        "HIS-214-51"
+      ],
+      "section_availability_available": true,
+      "seats_available": 16,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "HSC 231": {
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "ITA 101": {
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "MTH 100": {
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "MTH-100-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 16,
+      "seats_available_basis": "sum_of_section_records",
+      "source_label": "MTH 100 Algebra"
+    },
+    "MTH 101": {
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "notes": "Corequisite recitation for MTH 100.",
+      "section_ids": [
+        "MTH-101-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 15,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "MTH 103": {
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "MTH-103-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 0,
+      "seats_available_basis": "sum_of_section_records",
+      "source_label": "MTH 103 Contemporary Mathematics"
+    },
+    "MTH 111": {
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "MTH-111-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 1,
+      "seats_available_basis": "sum_of_section_records",
+      "source_label": "MTH 111 Pre-Calculus"
+    },
+    "MTH 121": {
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "MTH-121-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 2,
+      "seats_available_basis": "sum_of_section_records",
+      "source_label": "MTH 121 Calculus I"
+    },
+    "MTH 163": {
+      "categories": [
+        "Math"
+      ],
+      "placement_required": true,
+      "notes": "",
+      "section_ids": [
+        "MTH-163-01",
+        "MTH-163-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 11,
+      "seats_available_basis": "sum_of_section_records",
+      "source_label": "MTH 163 Basic Statistics for Sciences"
+    },
+    "NUR 100": {
+      "categories": [
+        "Major-specific freshman courses",
+        "Pre-Health and Nursing"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section"
+    },
+    "PHL 101": {
+      "categories": [
+        "Core"
+      ],
+      "placement_required": false,
+      "notes": "Section 51 is online and ends 10/08/2026.",
+      "section_ids": [
+        "PHL-101-01",
+        "PHL-101-02",
+        "PHL-101-03",
+        "PHL-101-51"
+      ],
+      "section_availability_available": true,
+      "seats_available": 13,
+      "seats_available_basis": "sum_of_section_records",
+      "standard_term_in_person_seats_available": 1
+    },
+    "PHY 115": {
+      "categories": [
+        "Core Science"
+      ],
+      "placement_required": false,
+      "notes": "Core Science for nonmajors.",
+      "section_ids": [
+        "PHY-115-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 14,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "POL 112": {
+      "categories": [
+        "American HIS/POL",
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "POL-112-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 14,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "POL 151": {
+      "categories": [
+        "Global HIS/POL",
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "POL-151-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 9,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "PSY 101": {
+      "categories": [
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "PSY-101-01",
+        "PSY-101-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 5,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "PSY 150": {
+      "categories": [
+        "Other good freshman courses",
+        "Psychology"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "PSY-150-01"
+      ],
+      "section_availability_available": true,
+      "seats_available": 6,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "PTH 101": {
+      "categories": [
+        "First-Year Experience"
+      ],
+      "placement_required": false,
+      "notes": "Only section 03 shows seats open in this snapshot.",
+      "section_ids": [
+        "PTH-101-01",
+        "PTH-101-02",
+        "PTH-101-03",
+        "PTH-101-04",
+        "PTH-101-05",
+        "PTH-101-06",
+        "PTH-101-07",
+        "PTH-101-08",
+        "PTH-101-09"
+      ],
+      "section_availability_available": true,
+      "seats_available": 4,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "SOC 101": {
+      "categories": [
+        "Social Science"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "SOC-101-01",
+        "SOC-101-02"
+      ],
+      "section_availability_available": true,
+      "seats_available": 16,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "SPA 101": {
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available.",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_group": "SPA 101 and SPA 107"
+    },
+    "SPA 107": {
+      "categories": [
+        "Language"
+      ],
+      "placement_required": true,
+      "notes": "Source reports SPA 101 and SPA 107 together with 0 seats available.",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_group": "SPA 101 and SPA 107"
+    },
+    "THL 101": {
+      "categories": [
+        "Core"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [
+        "THL-101-01",
+        "THL-101-02",
+        "THL-101-03",
+        "THL-101-04"
+      ],
+      "section_availability_available": true,
+      "seats_available": 32,
+      "seats_available_basis": "sum_of_section_records"
+    },
+    "THR 250": {
+      "categories": [
+        "Fine Arts"
+      ],
+      "placement_required": false,
+      "notes": "",
+      "section_ids": [],
+      "section_availability_available": false,
+      "seats_available": null,
+      "seats_available_basis": "not_available_by_section",
+      "source_label": "THR 250 Acting"
+    }
+  },
+  "course_level_only_availability": {
+    "ARH 100": {
+      "seats_open_course_total": 8,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ART 101": {
+      "seats_open_course_total": 15,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ART 102": {
+      "seats_open_course_total": 12,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ART 103": {
+      "seats_open_course_total": 3,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ART 254": {
+      "seats_open_course_total": 0,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "CMM 234": {
+      "seats_open_course_total": 17,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ECO 101": {
+      "seats_open_course_total": 7,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "EDU 131": {
+      "seats_open_course_total": 6,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ENG 105": {
+      "seats_open_course_total": 15,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ENG 121": {
+      "seats_open_course_total": 24,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ENG 123": {
+      "seats_open_course_total": 9,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "EXS 200": {
+      "seats_open_course_total": 9,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "FRE 101": {
+      "seats_open_course_total": 12,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "HSC 231": {
+      "seats_open_course_total": 13,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "ITA 101": {
+      "seats_open_course_total": 11,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "NUR 100": {
+      "seats_open_course_total": 22,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "SPA 101": {
+      "seats_open_course_total": 0,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "SPA 107": {
+      "seats_open_course_total": 0,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
+    },
+    "THR 250": {
+      "seats_open_course_total": 5,
+      "note": "Older course-level snapshot only. Do not use this value as availability for a specific section."
     }
   }
 }
